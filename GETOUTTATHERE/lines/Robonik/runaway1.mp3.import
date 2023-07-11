@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/runaway1.mp3-10a815ab93f831ef1526822d0614ab76.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/Robonik/runaway1.mp3"
+dest_files=[ "res://.import/runaway1.mp3-10a815ab93f831ef1526822d0614ab76.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

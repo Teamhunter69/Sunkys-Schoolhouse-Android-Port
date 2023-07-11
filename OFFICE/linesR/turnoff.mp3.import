@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/turnoff.mp3-0719235e047005a58b3297d34a997a21.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/linesR/turnoff.mp3"
+dest_files=[ "res://.import/turnoff.mp3-0719235e047005a58b3297d34a997a21.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

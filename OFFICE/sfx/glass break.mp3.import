@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/glass break.mp3-d41ca070578c8d800f8a3ab2eb52d41f.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/sfx/glass break.mp3"
+dest_files=[ "res://.import/glass break.mp3-d41ca070578c8d800f8a3ab2eb52d41f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

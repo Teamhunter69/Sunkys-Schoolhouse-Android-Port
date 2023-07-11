@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/FLOORB.mp3-8cbe06f204875d419f37a529395cf6a6.mp3str"
+
+[deps]
+
+source_file="res://MUSIC/FLOORB.mp3"
+dest_files=[ "res://.import/FLOORB.mp3-8cbe06f204875d419f37a529395cf6a6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

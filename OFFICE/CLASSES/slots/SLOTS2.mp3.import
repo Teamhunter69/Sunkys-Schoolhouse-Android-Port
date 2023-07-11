@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SLOTS2.mp3-986e3ddcbc1c068964c5179af6dfc33f.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/slots/SLOTS2.mp3"
+dest_files=[ "res://.import/SLOTS2.mp3-986e3ddcbc1c068964c5179af6dfc33f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

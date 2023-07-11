@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/EMintro.mp3-8dc4b0977d19e1ce4c85a2d68b7a92fa.mp3str"
+
+[deps]
+
+source_file="res://GFUN/lines/EMintro.mp3"
+dest_files=[ "res://.import/EMintro.mp3-8dc4b0977d19e1ce4c85a2d68b7a92fa.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hear them ring.mp3-20705933ce907a37d474e230e2ab451a.mp3str"
+
+[deps]
+
+source_file="res://MUSIC/hear them ring.mp3"
+dest_files=[ "res://.import/hear them ring.mp3-20705933ce907a37d474e230e2ab451a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

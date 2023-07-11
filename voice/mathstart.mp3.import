@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mathstart.mp3-29c9acb36b70a61b3fd9f63fd5395132.mp3str"
+
+[deps]
+
+source_file="res://voice/mathstart.mp3"
+dest_files=[ "res://.import/mathstart.mp3-29c9acb36b70a61b3fd9f63fd5395132.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

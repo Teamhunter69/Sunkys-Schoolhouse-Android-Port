@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ESCAPEtest.mp3-74b80eacece78c670bd13eddbbc78ff3.mp3str"
+
+[deps]
+
+source_file="res://MUSIC/ESCAPEtest.mp3"
+dest_files=[ "res://.import/ESCAPEtest.mp3-74b80eacece78c670bd13eddbbc78ff3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

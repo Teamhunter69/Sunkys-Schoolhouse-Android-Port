@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/EMbye.mp3-b21ca4fcc34707e995f6975f65eac67f.mp3str"
+
+[deps]
+
+source_file="res://GFUN/lines/EMbye.mp3"
+dest_files=[ "res://.import/EMbye.mp3-b21ca4fcc34707e995f6975f65eac67f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

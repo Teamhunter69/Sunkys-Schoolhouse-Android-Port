@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Punch_Sound_Effect_-_Gaming_SFX.mp3-3f1e7c1fd3a1378ca569e4220faf1317.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/sfx/Punch_Sound_Effect_-_Gaming_SFX.mp3"
+dest_files=[ "res://.import/Punch_Sound_Effect_-_Gaming_SFX.mp3-3f1e7c1fd3a1378ca569e4220faf1317.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

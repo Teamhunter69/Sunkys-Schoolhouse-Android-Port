@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GAMING.mp3-cec850dcd1dde174fa39ba68b767e427.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/gamerz/GAMING.mp3"
+dest_files=[ "res://.import/GAMING.mp3-cec850dcd1dde174fa39ba68b767e427.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

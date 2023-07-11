@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boogieend.wav-e303722811b6f98f5e3a2d122918ece8.sample"
+
+[deps]
+
+source_file="res://voice/boogieend.wav"
+dest_files=[ "res://.import/boogieend.wav-e303722811b6f98f5e3a2d122918ece8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

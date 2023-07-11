@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BOOGIESTART.mp3-d965425dc4d76d49f26a36cf113c68cb.mp3str"
+
+[deps]
+
+source_file="res://BOOGIE/BOOGIESTART.mp3"
+dest_files=[ "res://.import/BOOGIESTART.mp3-d965425dc4d76d49f26a36cf113c68cb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

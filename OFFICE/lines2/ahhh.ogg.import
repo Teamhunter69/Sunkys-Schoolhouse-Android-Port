@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ahhh.ogg-3747560dd97ffe702da737d69c373c0c.oggstr"
+
+[deps]
+
+source_file="res://OFFICE/lines2/ahhh.ogg"
+dest_files=[ "res://.import/ahhh.ogg-3747560dd97ffe702da737d69c373c0c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

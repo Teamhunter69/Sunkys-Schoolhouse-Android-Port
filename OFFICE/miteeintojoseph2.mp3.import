@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/miteeintojoseph2.mp3-4a46cba0cb74cedd80f73229357b8358.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/miteeintojoseph2.mp3"
+dest_files=[ "res://.import/miteeintojoseph2.mp3-4a46cba0cb74cedd80f73229357b8358.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

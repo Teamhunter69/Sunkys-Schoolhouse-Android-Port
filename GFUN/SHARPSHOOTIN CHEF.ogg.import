@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SHARPSHOOTIN CHEF.ogg-68574b2495a41e4b5422df50d13d9866.oggstr"
+
+[deps]
+
+source_file="res://GFUN/SHARPSHOOTIN CHEF.ogg"
+dest_files=[ "res://.import/SHARPSHOOTIN CHEF.ogg-68574b2495a41e4b5422df50d13d9866.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

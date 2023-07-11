@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/crem.mp3-2ca6279eebb77efad7ec13218be48ad1.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/crem.mp3"
+dest_files=[ "res://.import/crem.mp3-2ca6279eebb77efad7ec13218be48ad1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

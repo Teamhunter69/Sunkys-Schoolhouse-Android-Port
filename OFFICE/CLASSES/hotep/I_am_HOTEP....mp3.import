@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/I_am_HOTEP....mp3-485796d9adf02f51edcc39dfed6e4643.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/hotep/I_am_HOTEP....mp3"
+dest_files=[ "res://.import/I_am_HOTEP....mp3-485796d9adf02f51edcc39dfed6e4643.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

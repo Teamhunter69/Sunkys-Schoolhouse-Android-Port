@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/what_the_heck_are_you_doing.mp3-07a4bda38493a9b821fc00a22400f029.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/linez/what_the_heck_are_you_doing.mp3"
+dest_files=[ "res://.import/what_the_heck_are_you_doing.mp3-07a4bda38493a9b821fc00a22400f029.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

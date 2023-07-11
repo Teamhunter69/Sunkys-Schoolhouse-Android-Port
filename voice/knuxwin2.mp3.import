@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knuxwin2.mp3-9f64dd65737ca263955979c9b7da7fc4.mp3str"
+
+[deps]
+
+source_file="res://voice/knuxwin2.mp3"
+dest_files=[ "res://.import/knuxwin2.mp3-9f64dd65737ca263955979c9b7da7fc4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

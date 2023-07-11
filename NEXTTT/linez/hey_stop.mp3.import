@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hey_stop.mp3-b4056820f01283602b0280de56950f0e.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/linez/hey_stop.mp3"
+dest_files=[ "res://.import/hey_stop.mp3-b4056820f01283602b0280de56950f0e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

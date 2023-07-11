@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SHbye.mp3-3dfd1bbe3f552e8005a6d0c9b7b2879d.mp3str"
+
+[deps]
+
+source_file="res://GFUN/lines/SHbye.mp3"
+dest_files=[ "res://.import/SHbye.mp3-3dfd1bbe3f552e8005a6d0c9b7b2879d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

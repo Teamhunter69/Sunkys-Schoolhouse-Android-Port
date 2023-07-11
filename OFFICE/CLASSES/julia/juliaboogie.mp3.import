@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/juliaboogie.mp3-035db24c158771773437dcc0f18e8b22.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/julia/juliaboogie.mp3"
+dest_files=[ "res://.import/juliaboogie.mp3-035db24c158771773437dcc0f18e8b22.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

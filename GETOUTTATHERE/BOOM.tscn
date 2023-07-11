@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/Sega.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://GETOUTTATHERE/BOOM.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+font_data = ExtResource( 1 )
+
+[node name="BOOM" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_fonts/font = SubResource( 2 )
+text = "boom!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 328.0
+margin_top = 264.0
+margin_right = 1608.0
+margin_bottom = 984.0
+custom_fonts/font = SubResource( 3 )
+text = "Press Enter to try again... 
+
+unless you're a chicken!!!
+
+That's right! i went there!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

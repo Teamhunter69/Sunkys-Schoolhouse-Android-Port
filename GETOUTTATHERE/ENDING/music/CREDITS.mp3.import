@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/CREDITS.mp3-c3bd8f88c48254da4a23744a0a4657b9.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/ENDING/music/CREDITS.mp3"
+dest_files=[ "res://.import/CREDITS.mp3-c3bd8f88c48254da4a23744a0a4657b9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

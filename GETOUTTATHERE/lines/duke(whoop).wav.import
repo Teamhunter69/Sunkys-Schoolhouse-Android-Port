@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/duke(whoop).wav-90e13003b7f7c82ff0b76a7334c505c5.sample"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/duke(whoop).wav"
+dest_files=[ "res://.import/duke(whoop).wav-90e13003b7f7c82ff0b76a7334c505c5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

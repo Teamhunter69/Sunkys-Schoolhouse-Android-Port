@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/elevatorfast.mp3-c11a3e26ea0a6119a6b2ef7b27ea3ef7.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/elevatorfast.mp3"
+dest_files=[ "res://.import/elevatorfast.mp3-c11a3e26ea0a6119a6b2ef7b27ea3ef7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

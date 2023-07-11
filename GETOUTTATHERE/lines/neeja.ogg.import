@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/neeja.ogg-f208e31aa7389a4728c80bdcb34899cd.oggstr"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/neeja.ogg"
+dest_files=[ "res://.import/neeja.ogg-f208e31aa7389a4728c80bdcb34899cd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

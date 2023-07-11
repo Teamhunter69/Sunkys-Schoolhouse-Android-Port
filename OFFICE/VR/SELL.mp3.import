@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SELL.mp3-0cc909a40110f7e3227450820a2d778e.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/VR/SELL.mp3"
+dest_files=[ "res://.import/SELL.mp3-0cc909a40110f7e3227450820a2d778e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

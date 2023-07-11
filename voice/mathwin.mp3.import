@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mathwin.mp3-bcd6bf6f051328b82824ea2ec4ffac77.mp3str"
+
+[deps]
+
+source_file="res://voice/mathwin.mp3"
+dest_files=[ "res://.import/mathwin.mp3-bcd6bf6f051328b82824ea2ec4ffac77.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Old_victory_sound_roblox.mp3-a91c61accf97bbb4489d112bcfb51aa5.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/VR/Old_victory_sound_roblox.mp3"
+dest_files=[ "res://.import/Old_victory_sound_roblox.mp3-a91c61accf97bbb4489d112bcfb51aa5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

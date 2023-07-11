@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/why.mp3-b30573ab3e52cea3e80c02eb338fc1ab.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/linesR/why.mp3"
+dest_files=[ "res://.import/why.mp3-b30573ab3e52cea3e80c02eb338fc1ab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

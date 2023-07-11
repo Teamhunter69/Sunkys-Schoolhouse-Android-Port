@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/continue.mp3-0504274a760dd6097c71b4722c3ef64f.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/ENDING/music/continue.mp3"
+dest_files=[ "res://.import/continue.mp3-0504274a760dd6097c71b4722c3ef64f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

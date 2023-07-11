@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GET-OUTTA-THERE.mp3-a4639a446e1ee293e67382f3cc2fd7e9.mp3str"
+
+[deps]
+
+source_file="res://MUSIC/GET-OUTTA-THERE.mp3"
+dest_files=[ "res://.import/GET-OUTTA-THERE.mp3-a4639a446e1ee293e67382f3cc2fd7e9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

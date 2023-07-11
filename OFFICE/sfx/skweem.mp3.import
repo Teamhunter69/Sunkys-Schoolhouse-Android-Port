@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/skweem.mp3-9e641834b5b799dac813f1942692051c.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/sfx/skweem.mp3"
+dest_files=[ "res://.import/skweem.mp3-9e641834b5b799dac813f1942692051c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

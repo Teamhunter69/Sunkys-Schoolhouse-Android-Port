@@ -1,0 +1,3533 @@
+[gd_scene load_steps=97 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Main/Geometry/Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ddoor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Levels/Main/L_Main.gd" type="Script" id=4]
+[ext_resource path="res://Levels/Main/Geometry/Wall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Main/Geometry/Cube.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Texture/brick.tres" type="Material" id=7]
+[ext_resource path="res://Texture/floor.png" type="Texture" id=8]
+[ext_resource path="res://Texture/floor2.png" type="Texture" id=9]
+[ext_resource path="res://wall.gd" type="Script" id=10]
+[ext_resource path="res://door.tscn" type="PackedScene" id=11]
+[ext_resource path="res://cdoor.tscn" type="PackedScene" id=12]
+[ext_resource path="res://YellowDonut.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Texture/build/build6.png" type="Texture" id=14]
+[ext_resource path="res://mitee.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Texture/emeralds/em1.png" type="Texture" id=16]
+[ext_resource path="res://Texture/emeralds/em2.png" type="Texture" id=17]
+[ext_resource path="res://emerald.gd" type="Script" id=18]
+[ext_resource path="res://Texture/emeralds/em3.png" type="Texture" id=19]
+[ext_resource path="res://Texture/emeralds/em7.png" type="Texture" id=20]
+[ext_resource path="res://Texture/emeralds/em4.png" type="Texture" id=21]
+[ext_resource path="res://Texture/emeralds/em5.png" type="Texture" id=22]
+[ext_resource path="res://Texture/emeralds/em6.png" type="Texture" id=23]
+[ext_resource path="res://Texture/tlels.png" type="Texture" id=24]
+[ext_resource path="res://Levels/Main/tlels.gd" type="Script" id=25]
+[ext_resource path="res://class.gd" type="Script" id=26]
+[ext_resource path="res://Texture/box.png" type="Texture" id=27]
+[ext_resource path="res://Texture/face/tlelsf1.png" type="Texture" id=28]
+[ext_resource path="res://Texture/face/tlelsf2.png" type="Texture" id=29]
+[ext_resource path="res://Texture/face/tlelsf3.png" type="Texture" id=30]
+[ext_resource path="res://Texture/face/tlelsf4.png" type="Texture" id=31]
+[ext_resource path="res://Texture/face/tlelsf5.png" type="Texture" id=32]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 9 )
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 8 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=20]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=21]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=22]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=23]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=24]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=25]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=26]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=27]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=28]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=29]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=30]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=31]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=32]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=33]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=34]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=35]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=36]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=37]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=38]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=39]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=40]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=41]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=42]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=43]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=44]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=45]
+extents = Vector3( 45, 0.001, 51 )
+
+[sub_resource type="BoxShape" id=46]
+extents = Vector3( 0.001, 2, 1 )
+
+[sub_resource type="BoxShape" id=47]
+extents = Vector3( 1, 2, 0.001 )
+
+[sub_resource type="BoxShape" id=48]
+extents = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="Curve3D" id=49]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, -44, 0, 0, 0, 0, 0, 0, 0, 0, -44, 0, -152, 0, 0, 0, 0, 0, 0, -44, 0, -52, 0, 0, 0, 0, 0, 0, 0, 0, -52, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, -132, 0, 0, 0, 0, 0, 0, 12, 0, -132, 0, 0, 0, 0, 0, 0, 12, 0, -116, 0, 0, 0, 0, 0, 0, 12, 0, -52, 0, 0, 0, 0, 0, 0, 0, 0, -52, 0, 0, 0, 0, 0, 0, -8, 0, -52, 0, 0, 0, 0, 0, 0, -8, 0, -76, 0, 0, 0, 0, 0, 0, -24, 0, -76, 0, 0, 0, 0, 0, 0, -24, 0, -96, 0, 0, 0, 0, 0, 0, -44, 0, -96, 0, 0, 0, 0, 0, 0, 12, 0, -96, 0, 0, 0, 0, 0, 0, 12, 0, -52, 0, 0, 0, 0, 0, 0, 24, 0, -52, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0.14116, -0.00683259, -0.0131683 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+}
+
+[sub_resource type="CapsuleShape" id=50]
+height = 0.002
+
+[sub_resource type="NavigationMesh" id=51]
+vertices = PoolVector3Array( -42.6, 0.399, -171, -42.6, 0.399, -179.4, -45.6, 0.399, -179.4, -45.6, 0.399, -171, -45.6, 0.399, -162.3, -42.6, 0.399, -162.3, -42.6, 0.399, -171, -45.6, 0.399, -171, -45.6, 0.399, -117.9, -42.6, 0.399, -117.9, -42.3, 0.399, -120.6, -45.6, 0.399, -124.2, -42.3, 0.399, -159.6, -42.6, 0.399, -162.3, -45.6, 0.399, -162.3, -45.6, 0.399, -153, -10.2, 0.399, -159.6, -21.9, 0.399, -159.6, -45.6, 0.399, -143.7, -25.8, 0.399, -120.6, -6.3, 0.399, -120.6, 13.5, 0.399, -136.2, 13.5, 0.399, -136.2, 15.6, 0.399, -136.5, 15.3, 0.399, -159.6, 8.7, 0.399, -159.6, -45.6, 0.399, -124.2, -42.3, 0.399, -120.6, -34.2, 0.399, -120.6, -10.2, 0.399, -159.6, -10.5, 0.399, -163.5, -21.6, 0.399, -163.5, -21.9, 0.399, -159.6, 13.5, 0.399, -136.2, 2.4, 0.399, -159.6, -3.9, 0.399, -159.6, 1.8, 0.399, -120.6, 9.9, 0.399, -120.6, 13.5, 0.399, -128.1, -32.1, 0.399, -159.6, -42.3, 0.399, -159.6, -45.6, 0.399, -153, -45.6, 0.399, -143.7, -48, 0.399, -143.4, -48, 0.399, -124.5, -45.6, 0.399, -124.2, -25.8, 0.399, -120.6, -25.5, 0.399, -118.2, -6.6, 0.399, -118.2, -6.3, 0.399, -120.6, 13.5, 0.399, -136.2, -3.9, 0.399, -159.6, -10.2, 0.399, -159.6, 13.5, 0.399, -136.2, 8.7, 0.399, -159.6, 2.4, 0.399, -159.6, 1.8, 0.399, -120.6, 13.5, 0.399, -128.1, 13.5, 0.399, -136.2, -6.3, 0.399, -120.6, -45.6, 0.399, -124.2, -34.2, 0.399, -120.6, -25.8, 0.399, -120.6, -45.6, 0.399, -143.7, -32.1, 0.399, -159.6, -45.6, 0.399, -153, -45.6, 0.399, -143.7, -21.9, 0.399, -159.6, 42.3, 0.399, -136.5, 42.6, 0.399, -133.8, 45.6, 0.399, -133.8, 45.6, 0.399, -140.4, 22.2, 0.399, -136.5, 22.8, 0.399, -159.6, 15.3, 0.399, -159.6, 15.6, 0.399, -136.5, 45.6, 0.399, -153.3, 45.6, 0.399, -159.6, 37.8, 0.399, -159.6, 42.3, 0.399, -136.5, 45.6, 0.399, -140.4, 45.6, 0.399, -146.7, 35.4, 0.399, -136.5, 28.8, 0.399, -136.5, 45.6, 0.399, -146.7, 30.3, 0.399, -159.6, 22.8, 0.399, -159.6, 22.2, 0.399, -136.5, 45.6, 0.399, -146.7, 45.6, 0.399, -153.3, 37.8, 0.399, -159.6, 30.3, 0.399, -159.6, 28.8, 0.399, -136.5, 35.4, 0.399, -136.5, 45.6, 0.399, -146.7, -56.7, 0.399, -143.4, -65.4, 0.399, -143.4, -65.4, 0.399, -134.1, -65.4, 0.399, -134.1, -65.4, 0.399, -124.5, -56.7, 0.399, -124.5, -56.7, 0.399, -143.4, -65.4, 0.399, -134.1, -56.7, 0.399, -124.5, -48, 0.399, -124.5, -48, 0.399, -143.4, 42.3, 0.399, -108.6, 42.6, 0.399, -106.2, 45.6, 0.399, -106.2, 45.6, 0.399, -113.1, 35.1, 0.399, -108.6, 42.3, 0.399, -108.6, 45.6, 0.399, -113.1, 10.5, 0.399, -102.3, 13.5, 0.399, -102.3, 13.8, 0.399, -108.6, 10.5, 0.399, -111.3, 10.5, 0.399, -120.3, 10.5, 0.399, -111.3, 20.7, 0.399, -108.6, 27.9, 0.399, -108.6, 27.9, 0.399, -127.5, 20.7, 0.399, -127.5, 45.6, 0.399, -133.8, 42.6, 0.399, -133.8, 42.3, 0.399, -127.5, 45.6, 0.399, -126.9, 20.7, 0.399, -127.5, 13.8, 0.399, -127.5, 10.5, 0.399, -120.3, 13.8, 0.399, -127.5, 13.5, 0.399, -128.1, 9.9, 0.399, -120.6, 10.5, 0.399, -120.3, 35.1, 0.399, -108.6, 45.6, 0.399, -113.1, 45.6, 0.399, -120, 35.1, 0.399, -127.5, 27.9, 0.399, -127.5, 27.9, 0.399, -108.6, 45.6, 0.399, -120, 45.6, 0.399, -126.9, 42.3, 0.399, -127.5, 35.1, 0.399, -127.5, 10.5, 0.399, -111.3, 13.8, 0.399, -108.6, 20.7, 0.399, -108.6, -9.9, 0.399, -100.5, -9.6, 0.399, -99.9, -6.6, 0.399, -100.2, -6.6, 0.399, -109.2, -14.1, 0.399, -100.5, -9.9, 0.399, -100.5, -6.6, 0.399, -109.2, -6.6, 0.399, -118.2, -25.5, 0.399, -118.2, -25.5, 0.399, -109.2, -25.5, 0.399, -100.2, -14.4, 0.399, -99.9, -14.1, 0.399, -100.5, -25.5, 0.399, -109.2, -45.6, 0.399, -96, -42, 0.399, -99.6, -42.6, 0.399, -99.9, -45.9, 0.399, -96.6, -42.6, 0.399, -99.9, -42.6, 0.399, -108.9, -45.6, 0.399, -107.7, -49.5, 0.399, -96.6, -45.9, 0.399, -96.6, -42.6, 0.399, -99.9, -45.6, 0.399, -107.7, -49.5, 0.399, -107.4, -42.6, 0.399, -108.9, -42.6, 0.399, -117.9, -45.6, 0.399, -117.9, -45.6, 0.399, -107.7, 45.9, 0.399, -103.5, 45.6, 0.399, -106.2, 42.6, 0.399, -106.2, 42.6, 0.399, -99.9, 42, 0.399, -99.6, 45.6, 0.399, -91.8, 45.9, 0.399, -92.4, 42.6, 0.399, -99.9, 49.5, 0.399, -103.5, 45.9, 0.399, -103.5, 42.6, 0.399, -99.9, 45.9, 0.399, -92.4, 49.5, 0.399, -92.4, -6.3, 0.399, -99.6, -6.6, 0.399, -100.2, -9.6, 0.399, -99.9, -9.6, 0.399, -90, 13.8, 0.399, -99.6, 13.5, 0.399, -102.3, 10.5, 0.399, -102.3, 10.2, 0.399, -99.6, 25.5, 0.399, -79.2, 25.8, 0.399, -80.4, 21, 0.399, -99.6, 13.8, 0.399, -99.6, 10.2, 0.399, -99.6, 1.8, 0.399, -99.6, -9.6, 0.399, -90, -9.6, 0.399, -90, -9.6, 0.399, -80.1, -8.1, 0.399, -79.2, 25.5, 0.399, -79.2, 13.8, 0.399, -99.6, 10.2, 0.399, -99.6, 1.8, 0.399, -99.6, -6.3, 0.399, -99.6, -9.6, 0.399, -90, 25.8, 0.399, -80.4, 28.2, 0.399, -80.4, 28.2, 0.399, -99.6, 21, 0.399, -99.6, -21.9, 0.399, -76.5, -21.6, 0.399, -75.9, -14.1, 0.399, -79.5, -14.4, 0.399, -99.9, -25.5, 0.399, -100.2, -25.8, 0.399, -99.6, -14.4, 0.399, -89.7, -27.3, 0.399, -76.5, -21.9, 0.399, -76.5, -14.1, 0.399, -79.5, -14.4, 0.399, -89.7, -25.8, 0.399, -99.6, -27.6, 0.399, -99.6, -45.6, 0.399, -73.8, -42.6, 0.399, -73.8, -42.3, 0.399, -76.5, -45.6, 0.399, -84.9, -34.5, 0.399, -72.6, -29.4, 0.399, -72.6, -29.4, 0.399, -76.2, -34.8, 0.399, -76.5, -34.8, 0.399, -99.6, -45.6, 0.399, -96, -45.6, 0.399, -84.9, -34.8, 0.399, -76.5, -27.3, 0.399, -76.5, -27.6, 0.399, -99.6, -34.8, 0.399, -76.5, -29.4, 0.399, -76.2, -27.3, 0.399, -76.5, -45.6, 0.399, -84.9, -42.3, 0.399, -76.5, -34.8, 0.399, -76.5, -34.8, 0.399, -99.6, -42, 0.399, -99.6, -45.6, 0.399, -96, 42.3, 0.399, -80.4, 42.6, 0.399, -74.1, 45.6, 0.399, -74.1, 45.6, 0.399, -83.1, 35.1, 0.399, -80.4, 45.6, 0.399, -83.1, 45.6, 0.399, -91.8, 35.1, 0.399, -99.6, 28.2, 0.399, -99.6, 28.2, 0.399, -80.4, 35.1, 0.399, -80.4, 42.3, 0.399, -80.4, 45.6, 0.399, -83.1, 45.6, 0.399, -91.8, 42, 0.399, -99.6, 35.1, 0.399, -99.6, -8.1, 0.399, -79.2, -9.6, 0.399, -80.1, -9.9, 0.399, -79.5, -1.8, 0.399, -48.6, -1.5, 0.399, -46.2, 1.5, 0.399, -46.2, 1.5, 0.399, -56.1, -8.1, 0.399, -79.2, -9.9, 0.399, -79.5, -14.1, 0.399, -79.5, -21.6, 0.399, -75.9, -21.6, 0.399, -66, -21.6, 0.399, -55.8, -22.2, 0.399, -55.5, -21.9, 0.399, -48.6, -12, 0.399, -48.6, -12, 0.399, -48.6, -1.8, 0.399, -48.6, 1.5, 0.399, -56.1, -8.1, 0.399, -79.2, -21.6, 0.399, -66, -21.6, 0.399, -55.8, 1.5, 0.399, -56.1, 2.10001, 0.399, -56.4, -8.1, 0.399, -79.2, 12, 0.399, -56.4, 21.9, 0.399, -56.4, 25.5, 0.399, -72, 12, 0.399, -56.4, 25.5, 0.399, -72, 25.5, 0.399, -79.2, -8.1, 0.399, -79.2, 2.10001, 0.399, -56.4, 22.5, 0.399, -46.2, 25.5, 0.399, -46.2, 25.8, 0.399, -48.6, 22.5, 0.399, -56.1, 42.3, 0.399, -48.6, 42.6, 0.399, -45.9, 45.6, 0.399, -45.9, 45.6, 0.399, -53.1, 45.6, 0.399, -74.1, 42.6, 0.399, -74.1, 42.3, 0.399, -71.4, 45.6, 0.399, -67.2, 25.8, 0.399, -71.4, 25.5, 0.399, -72, 21.9, 0.399, -56.4, 22.5, 0.399, -56.1, 33.9, 0.399, -48.6, 42.3, 0.399, -48.6, 45.6, 0.399, -60, 33.9, 0.399, -71.4, 25.8, 0.399, -71.4, 22.5, 0.399, -56.1, 22.5, 0.399, -56.1, 25.8, 0.399, -48.6, 33.9, 0.399, -48.6, 42.3, 0.399, -48.6, 45.6, 0.399, -53.1, 45.6, 0.399, -60, 45.6, 0.399, -60, 45.6, 0.399, -67.2, 42.3, 0.399, -71.4, 33.9, 0.399, -71.4, -45.6, 0.399, -58.2, -42.6, 0.399, -58.2, -42.6, 0.399, -66, -45.6, 0.399, -66, -45.6, 0.399, -73.8, -45.6, 0.399, -66, -42.6, 0.399, -66, -42.6, 0.399, -73.8, -42.3, 0.399, -55.5, -42.6, 0.399, -58.2, -45.6, 0.399, -58.2, -45.6, 0.399, -49.8, -20.7, 0.399, -24.6, -20.4, 0.399, -43.5, -22.5, 0.399, -43.8, -27, 0.399, -24.6, -22.5, 0.399, -48.3, -21.9, 0.399, -48.6, -22.2, 0.399, -55.5, -32.4, 0.399, -55.5, -45.6, 0.399, -33, -45.6, 0.399, -24.6, -39.6, 0.399, -24.6, -45.6, 0.399, -33, -33.3, 0.399, -24.6, -27, 0.399, -24.6, -22.5, 0.399, -43.8, -32.4, 0.399, -55.5, -45.6, 0.399, -41.4, -32.4, 0.399, -55.5, -42.3, 0.399, -55.5, -45.6, 0.399, -49.8, -45.6, 0.399, -41.4, -45.6, 0.399, -33, -39.6, 0.399, -24.6, -33.3, 0.399, -24.6, -22.5, 0.399, -43.8, -22.5, 0.399, -48.3, -32.4, 0.399, -55.5, 1.8, 0.399, -43.5, 1.5, 0.399, -46.2, -1.5, 0.399, -46.2, -1.8, 0.399, -43.5, -1.8, 0.399, -43.5, -7.2, 0.399, -43.5, -7.5, 0.399, -24.6, -5.4, 0.399, -24.3, -5.4, 0.399, -20.7, 5.4, 0.399, -20.7, 5.4, 0.399, -24.3, 7.5, 0.399, -24.6, 7.2, 0.399, -43.5, 1.8, 0.399, -43.5, -7.5, 0.399, -24.6, -5.4, 0.399, -24.3, 5.4, 0.399, -24.3, 7.5, 0.399, -24.6, 1.8, 0.399, -43.5, -1.8, 0.399, -43.5, 28.2, 0.399, -24.6, 28.2, 0.399, -27.6, 25.5, 0.399, -27.9, 17.7, 0.399, -24.6, 25.5, 0.399, -46.2, 22.5, 0.399, -46.2, 22.2, 0.399, -43.5, 25.8, 0.399, -39.6, 25.5, 0.399, -36.3, 25.8, 0.399, -39.6, 22.2, 0.399, -43.5, 14.7, 0.399, -43.5, 33.6, 0.399, -36.6, 33.6, 0.399, -39.6, 25.8, 0.399, -39.6, 25.5, 0.399, -36.3, 17.7, 0.399, -24.6, 25.5, 0.399, -27.9, 25.5, 0.399, -36.3, 14.7, 0.399, -43.5, 7.2, 0.399, -43.5, 7.5, 0.399, -24.6, 42.6, 0.399, -30.3, 45.6, 0.399, -30.3, 45.6, 0.399, -38.1, 42.6, 0.399, -38.1, 42.6, 0.399, -45.9, 42.6, 0.399, -38.1, 45.6, 0.399, -38.1, 45.6, 0.399, -45.9, -7.5, 0.399, -24.6, -7.2, 0.399, -43.5, -13.8, 0.399, -43.5, -14.1, 0.399, -24.6, -20.4, 0.399, -43.5, -20.7, 0.399, -24.6, -14.1, 0.399, -24.6, -13.8, 0.399, -43.5, 45.6, 0.399, -30.3, 42.6, 0.399, -30.3, 42.3, 0.399, -27.6, 45.6, 0.399, -24.6, 35.1, 0.399, -27.6, 28.2, 0.399, -27.6, 28.2, 0.399, -24.6, 36.9, 0.399, -24.6, 36.9, 0.399, -24.6, 45.6, 0.399, -24.6, 42.3, 0.399, -27.6, 35.1, 0.399, -27.6 )
+polygons = [ PoolIntArray( 3, 2, 0 ), PoolIntArray( 0, 2, 1 ), PoolIntArray( 7, 6, 4 ), PoolIntArray( 4, 6, 5 ), PoolIntArray( 9, 8, 10 ), PoolIntArray( 10, 8, 11 ), PoolIntArray( 13, 12, 14 ), PoolIntArray( 14, 12, 15 ), PoolIntArray( 17, 16, 18 ), PoolIntArray( 18, 16, 19 ), PoolIntArray( 19, 16, 20 ), PoolIntArray( 20, 16, 21 ), PoolIntArray( 23, 22, 24 ), PoolIntArray( 24, 22, 25 ), PoolIntArray( 28, 27, 26 ), PoolIntArray( 30, 29, 31 ), PoolIntArray( 31, 29, 32 ), PoolIntArray( 35, 34, 33 ), PoolIntArray( 38, 37, 36 ), PoolIntArray( 41, 40, 39 ), PoolIntArray( 43, 42, 44 ), PoolIntArray( 44, 42, 45 ), PoolIntArray( 47, 46, 48 ), PoolIntArray( 48, 46, 49 ), PoolIntArray( 52, 51, 50 ), PoolIntArray( 53, 55, 54 ), PoolIntArray( 57, 56, 58 ), PoolIntArray( 58, 56, 59 ), PoolIntArray( 61, 60, 62 ), PoolIntArray( 62, 60, 63 ), PoolIntArray( 65, 64, 66 ), PoolIntArray( 66, 64, 67 ), PoolIntArray( 69, 68, 70 ), PoolIntArray( 70, 68, 71 ), PoolIntArray( 75, 74, 72 ), PoolIntArray( 72, 74, 73 ), PoolIntArray( 78, 77, 76 ), PoolIntArray( 80, 79, 81 ), PoolIntArray( 81, 79, 82 ), PoolIntArray( 83, 87, 84 ), PoolIntArray( 84, 87, 85 ), PoolIntArray( 85, 87, 86 ), PoolIntArray( 89, 88, 90 ), PoolIntArray( 90, 88, 91 ), PoolIntArray( 94, 93, 92 ), PoolIntArray( 97, 96, 95 ), PoolIntArray( 100, 99, 98 ), PoolIntArray( 101, 105, 102 ), PoolIntArray( 102, 105, 103 ), PoolIntArray( 103, 105, 104 ), PoolIntArray( 107, 106, 108 ), PoolIntArray( 108, 106, 109 ), PoolIntArray( 112, 111, 110 ), PoolIntArray( 114, 113, 115 ), PoolIntArray( 115, 113, 116 ), PoolIntArray( 118, 117, 119 ), PoolIntArray( 119, 117, 120 ), PoolIntArray( 120, 117, 122 ), PoolIntArray( 120, 122, 121 ), PoolIntArray( 124, 123, 125 ), PoolIntArray( 125, 123, 126 ), PoolIntArray( 129, 128, 127 ), PoolIntArray( 133, 132, 130 ), PoolIntArray( 130, 132, 131 ), PoolIntArray( 135, 134, 136 ), PoolIntArray( 136, 134, 139 ), PoolIntArray( 136, 139, 137 ), PoolIntArray( 137, 139, 138 ), PoolIntArray( 141, 140, 142 ), PoolIntArray( 142, 140, 143 ), PoolIntArray( 146, 145, 144 ), PoolIntArray( 148, 147, 149 ), PoolIntArray( 149, 147, 150 ), PoolIntArray( 152, 151, 153 ), PoolIntArray( 153, 151, 154 ), PoolIntArray( 154, 151, 156 ), PoolIntArray( 154, 156, 155 ), PoolIntArray( 158, 157, 159 ), PoolIntArray( 159, 157, 160 ), PoolIntArray( 164, 163, 161 ), PoolIntArray( 161, 163, 162 ), PoolIntArray( 167, 166, 165 ), PoolIntArray( 169, 168, 170 ), PoolIntArray( 170, 168, 171 ), PoolIntArray( 171, 168, 172 ), PoolIntArray( 174, 173, 175 ), PoolIntArray( 175, 173, 176 ), PoolIntArray( 178, 177, 179 ), PoolIntArray( 179, 177, 180 ), PoolIntArray( 184, 183, 181 ), PoolIntArray( 181, 183, 182 ), PoolIntArray( 186, 185, 187 ), PoolIntArray( 187, 185, 188 ), PoolIntArray( 188, 185, 189 ), PoolIntArray( 191, 190, 192 ), PoolIntArray( 192, 190, 193 ), PoolIntArray( 196, 195, 197 ), PoolIntArray( 197, 195, 194 ), PoolIntArray( 199, 198, 200 ), PoolIntArray( 200, 198, 201 ), PoolIntArray( 204, 203, 202 ), PoolIntArray( 206, 205, 207 ), PoolIntArray( 207, 205, 210 ), PoolIntArray( 207, 210, 209 ), PoolIntArray( 207, 209, 208 ), PoolIntArray( 213, 212, 211 ), PoolIntArray( 215, 214, 216 ), PoolIntArray( 216, 214, 217 ), PoolIntArray( 220, 219, 218 ), PoolIntArray( 222, 221, 223 ), PoolIntArray( 223, 221, 224 ), PoolIntArray( 226, 225, 227 ), PoolIntArray( 227, 225, 228 ), PoolIntArray( 228, 225, 229 ), PoolIntArray( 229, 225, 230 ), PoolIntArray( 232, 231, 233 ), PoolIntArray( 233, 231, 234 ), PoolIntArray( 236, 235, 237 ), PoolIntArray( 237, 235, 238 ), PoolIntArray( 239, 244, 240 ), PoolIntArray( 240, 244, 241 ), PoolIntArray( 241, 244, 242 ), PoolIntArray( 242, 244, 243 ), PoolIntArray( 247, 246, 245 ), PoolIntArray( 250, 249, 248 ), PoolIntArray( 253, 252, 251 ), PoolIntArray( 255, 254, 256 ), PoolIntArray( 256, 254, 257 ), PoolIntArray( 259, 258, 260 ), PoolIntArray( 260, 258, 263 ), PoolIntArray( 260, 263, 261 ), PoolIntArray( 261, 263, 262 ), PoolIntArray( 264, 266, 265 ), PoolIntArray( 269, 268, 267 ), PoolIntArray( 272, 271, 270 ), PoolIntArray( 274, 273, 275 ), PoolIntArray( 275, 273, 276 ), PoolIntArray( 278, 277, 279 ), PoolIntArray( 279, 277, 280 ), PoolIntArray( 280, 277, 281 ), PoolIntArray( 283, 282, 284 ), PoolIntArray( 284, 282, 285 ), PoolIntArray( 287, 286, 288 ), PoolIntArray( 288, 286, 291 ), PoolIntArray( 288, 291, 290 ), PoolIntArray( 288, 290, 289 ), PoolIntArray( 294, 293, 292 ), PoolIntArray( 297, 296, 295 ), PoolIntArray( 299, 298, 300 ), PoolIntArray( 300, 298, 302 ), PoolIntArray( 300, 302, 301 ), PoolIntArray( 304, 303, 305 ), PoolIntArray( 305, 303, 306 ), PoolIntArray( 308, 307, 309 ), PoolIntArray( 309, 307, 310 ), PoolIntArray( 312, 311, 313 ), PoolIntArray( 313, 311, 314 ), PoolIntArray( 318, 317, 315 ), PoolIntArray( 315, 317, 316 ), PoolIntArray( 320, 319, 321 ), PoolIntArray( 321, 319, 324 ), PoolIntArray( 321, 324, 322 ), PoolIntArray( 322, 324, 323 ), PoolIntArray( 327, 326, 325 ), PoolIntArray( 330, 329, 328 ), PoolIntArray( 332, 331, 333 ), PoolIntArray( 333, 331, 334 ), PoolIntArray( 338, 337, 335 ), PoolIntArray( 335, 337, 336 ), PoolIntArray( 342, 341, 339 ), PoolIntArray( 339, 341, 340 ), PoolIntArray( 344, 343, 345 ), PoolIntArray( 345, 343, 346 ), PoolIntArray( 348, 347, 349 ), PoolIntArray( 349, 347, 350 ), PoolIntArray( 352, 351, 353 ), PoolIntArray( 353, 351, 354 ), PoolIntArray( 357, 356, 355 ), PoolIntArray( 359, 358, 360 ), PoolIntArray( 360, 358, 363 ), PoolIntArray( 360, 363, 361 ), PoolIntArray( 361, 363, 362 ), PoolIntArray( 366, 365, 367 ), PoolIntArray( 367, 365, 364 ), PoolIntArray( 370, 369, 368 ), PoolIntArray( 373, 372, 371 ), PoolIntArray( 376, 375, 377 ), PoolIntArray( 377, 375, 374 ), PoolIntArray( 380, 379, 378 ), PoolIntArray( 384, 383, 381 ), PoolIntArray( 381, 383, 382 ), PoolIntArray( 387, 386, 385 ), PoolIntArray( 389, 388, 390 ), PoolIntArray( 390, 388, 391 ), PoolIntArray( 391, 388, 393 ), PoolIntArray( 391, 393, 392 ), PoolIntArray( 395, 394, 396 ), PoolIntArray( 396, 394, 397 ), PoolIntArray( 399, 398, 400 ), PoolIntArray( 400, 398, 401 ), PoolIntArray( 403, 402, 404 ), PoolIntArray( 404, 402, 405 ), PoolIntArray( 407, 406, 408 ), PoolIntArray( 408, 406, 409 ), PoolIntArray( 411, 410, 412 ), PoolIntArray( 412, 410, 415 ), PoolIntArray( 412, 415, 413 ), PoolIntArray( 413, 415, 414 ), PoolIntArray( 419, 418, 416 ), PoolIntArray( 416, 418, 417 ), PoolIntArray( 423, 422, 420 ), PoolIntArray( 420, 422, 421 ), PoolIntArray( 427, 426, 424 ), PoolIntArray( 424, 426, 425 ), PoolIntArray( 431, 430, 428 ), PoolIntArray( 428, 430, 429 ), PoolIntArray( 433, 432, 434 ), PoolIntArray( 434, 432, 435 ), PoolIntArray( 437, 436, 438 ), PoolIntArray( 438, 436, 439 ), PoolIntArray( 443, 442, 440 ), PoolIntArray( 440, 442, 441 ) ]
+
+[sub_resource type="BoxShape" id=52]
+extents = Vector3( 8.28181, 1, 7.69406 )
+
+[sub_resource type="BoxShape" id=53]
+extents = Vector3( 8.53235, 1, 7.86098 )
+
+[sub_resource type="BoxShape" id=54]
+extents = Vector3( 12.5214, 1, 9.76262 )
+
+[sub_resource type="BoxShape" id=55]
+extents = Vector3( 9.8777, 1, 8.14347 )
+
+[sub_resource type="BoxShape" id=56]
+extents = Vector3( 6.30314, 1, 9.59602 )
+
+[sub_resource type="BoxShape" id=57]
+extents = Vector3( 8, 1, 6 )
+
+[sub_resource type="BoxShape" id=58]
+extents = Vector3( 12.4434, 1, 9.76262 )
+
+[sub_resource type="BoxShape" id=59]
+extents = Vector3( 8.30724, 1, 9.76262 )
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 9.86879, 1, 12.3727 )
+
+[sub_resource type="BoxShape" id=61]
+extents = Vector3( 9.86879, 1, 12.4207 )
+
+[sub_resource type="BoxShape" id=62]
+extents = Vector3( 6.35382, 1, 11.7887 )
+
+[sub_resource type="BoxShape" id=63]
+extents = Vector3( 12.0554, 1, 9.76262 )
+
+[sub_resource type="BoxShape" id=64]
+extents = Vector3( 12.3028, 1, 9.59602 )
+
+[node name="L_Main" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="build" type="Sprite3D" parent="."]
+transform = Transform( 0.433013, 0, 0.5, 0, 0.5, 0, -0.25, 0, 0.866025, -4, 1, -17 )
+texture = ExtResource( 14 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="ArenaGeometry" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -3.7 )
+
+[node name="Floor2" parent="ArenaGeometry" instance=ExtResource( 2 )]
+transform = Transform( 50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -1.78814e-07, -101 )
+
+[node name="Wall2" parent="ArenaGeometry" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.75, 20 )
+
+[node name="Wall3" parent="ArenaGeometry" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20, 5.75, 0 )
+
+[node name="Wall4" parent="ArenaGeometry" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20, 5.75, 0 )
+
+[node name="Cube1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 4, 0, 0, 0, 2, 0, 0, 0, 2, -15.3938, 2.25, -12.3006 )
+
+[node name="Slope1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 3.5, 0, 0, 0, 1.53209, -2.41045, 0, 1.28558, 2.87267, -15.3938, 0.31, -8.72059 )
+
+[node name="Platform1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 6.25, 0, 0, 0, 0.25, 0, 0, 0, 2, -13.25, 5.75, -17.5 )
+
+[node name="Platform2" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 6.25, 0, 0, 0, 0.25, 0, 0, 0, 2, 13.25, 5.75, -17.5 )
+
+[node name="Platform3" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( -2.73196e-07, 0, 2, 0, 0.25, 0, -6.25, 0, -8.74228e-08, -17.5, 5.75, -1.75 )
+
+[node name="Platform4" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( -2.73196e-07, 0, 2, 0, 0.25, 0, -6.25, 0, -8.74228e-08, 17.5, 5.75, -1.75 )
+
+[node name="SlopeEnd1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 18, 3.5, 17.5 )
+
+[node name="SlopeEnd2" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -18, 3.5, 17.5 )
+
+[node name="Slope2" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( -3.2476, -0.125, -1.74846e-07, -1.875, 0.216506, 0, 2.83914e-07, 1.09278e-08, -2, 12.87, 1.66, 17.5 )
+
+[node name="Slope3" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 3.2476, 0.125, 0, -1.875, 0.216506, 0, 0, 0, 2, -12.87, 1.66, 17.5 )
+
+[node name="Platform5" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 18, 3.5, 13.5 )
+
+[node name="Platform6" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 14, 3.5, 13.5 )
+
+[node name="Platform7" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 10, 3.5, 13.5 )
+
+[node name="Platform8" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 6, 3.5, 13.5 )
+
+[node name="Platform9" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, 2, 3.5, 13.5 )
+
+[node name="Platform10" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2, 3.5, 13.5 )
+
+[node name="Platform11" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -6, 3.5, 13.5 )
+
+[node name="Platform12" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -10, 3.5, 13.5 )
+
+[node name="Platform13" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -14, 3.5, 13.5 )
+
+[node name="Platform14" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -18, 3.5, 13.5 )
+
+[node name="TooSteep1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( -3.5, -0.216506, -3.01992e-07, -6.06218, 0.125, -1.51421e-07, 9.87455e-07, 2.32278e-08, -2, 16.5, 5.5, 8.5 )
+
+[node name="TooSteep2" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 3.5, 0.216506, 0, -6.06218, 0.125, 0, 0, 0, 2, -16.5, 5.5, 8.5 )
+
+[node name="Lighting" type="Node" parent="."]
+
+[node name="floor" type="CSGCombiner" parent="."]
+
+[node name="floor2" type="CSGCombiner" parent="floor"]
+
+[node name="CSGBox3" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -36 )
+width = 40.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -50 )
+width = 20.0
+height = 0.002
+depth = 12.0
+material = SubResource( 1 )
+
+[node name="CSGBox5" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -62 )
+width = 20.0
+height = 0.002
+depth = 28.0
+material = SubResource( 1 )
+
+[node name="CSGBox6" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -36 )
+width = 20.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox7" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -66 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox8" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -60 )
+width = 16.0
+height = 0.002
+depth = 24.0
+material = SubResource( 1 )
+
+[node name="CSGBox9" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -38 )
+width = 8.0
+height = 0.002
+depth = 4.0
+material = SubResource( 1 )
+
+[node name="CSGBox10" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -90 )
+width = 16.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox11" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox12" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -112 )
+width = 16.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox13" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -134 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox14" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -146 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox15" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -118 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox16" type="CSGBox" parent="floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24 )
+width = 12.0
+height = 0.002
+depth = 8.0
+material = SubResource( 2 )
+
+[node name="CSGBox2" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox3" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox4" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -104 )
+width = 4.0
+height = 0.002
+depth = 152.0
+material = SubResource( 2 )
+
+[node name="CSGBox5" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, -94 )
+width = 4.0
+height = 0.002
+depth = 132.0
+material = SubResource( 2 )
+
+[node name="CSGBox6" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -158 )
+width = 84.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox7" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -138 )
+width = 56.0
+height = 0.002
+depth = 36.0
+material = SubResource( 2 )
+
+[node name="CSGBox8" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -110 )
+width = 4.0
+height = 0.002
+depth = 20.0
+material = SubResource( 2 )
+
+[node name="CSGBox9" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -90 )
+width = 4.0
+height = 0.002
+depth = 28.0
+material = SubResource( 2 )
+
+[node name="CSGBox10" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -102 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox11" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox19" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -74 )
+width = 6.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox12" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox13" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox14" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox15" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -100 )
+width = 4.0
+height = 0.002
+depth = 40.0
+material = SubResource( 2 )
+
+[node name="CSGBox16" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -98 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox17" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -102 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox18" type="CSGBox" parent="floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -162 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="floor2" type="CSGCombiner" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0 )
+
+[node name="floor2" type="CSGCombiner" parent="floor2"]
+
+[node name="CSGBox3" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -36 )
+width = 40.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -50 )
+width = 20.0
+height = 0.002
+depth = 12.0
+material = SubResource( 1 )
+
+[node name="CSGBox5" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -62 )
+width = 20.0
+height = 0.002
+depth = 28.0
+material = SubResource( 1 )
+
+[node name="CSGBox6" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -36 )
+width = 20.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox7" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -66 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox8" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -60 )
+width = 16.0
+height = 0.002
+depth = 24.0
+material = SubResource( 1 )
+
+[node name="CSGBox9" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -38 )
+width = 8.0
+height = 0.002
+depth = 4.0
+material = SubResource( 1 )
+
+[node name="CSGBox10" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -90 )
+width = 16.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox11" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox12" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -112 )
+width = 16.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox13" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -134 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox14" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -146 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox15" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -118 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox16" type="CSGBox" parent="floor2/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24 )
+width = 12.0
+height = 0.002
+depth = 8.0
+material = SubResource( 2 )
+
+[node name="CSGBox2" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox3" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox4" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -104 )
+width = 4.0
+height = 0.002
+depth = 152.0
+material = SubResource( 2 )
+
+[node name="CSGBox5" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, -94 )
+width = 4.0
+height = 0.002
+depth = 132.0
+material = SubResource( 2 )
+
+[node name="CSGBox6" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -158 )
+width = 84.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox7" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -138 )
+width = 56.0
+height = 0.002
+depth = 36.0
+material = SubResource( 2 )
+
+[node name="CSGBox8" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -110 )
+width = 4.0
+height = 0.002
+depth = 20.0
+material = SubResource( 2 )
+
+[node name="CSGBox9" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -90 )
+width = 4.0
+height = 0.002
+depth = 28.0
+material = SubResource( 2 )
+
+[node name="CSGBox10" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -102 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox11" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox19" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -74 )
+width = 6.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox12" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox13" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox14" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox15" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -100 )
+width = 4.0
+height = 0.002
+depth = 40.0
+material = SubResource( 2 )
+
+[node name="CSGBox16" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -98 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox17" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -102 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox18" type="CSGBox" parent="floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -162 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="wallz" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -20 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="CSGBox2" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -20 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox2/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="CSGBox3" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -22 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox3/StaticBody"]
+shape = SubResource( 5 )
+
+[node name="CSGBox4" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -22 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox4/StaticBody"]
+shape = SubResource( 6 )
+
+[node name="CSGBox5" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, -24 )
+width = 40.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox5/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="CSGBox6" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -24 )
+width = 40.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox6/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox7" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -60 )
+width = 0.002
+height = 4.0
+depth = 72.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox7/StaticBody"]
+shape = SubResource( 9 )
+
+[node name="CSGBox8" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -157.5 )
+width = 0.002
+height = 4.0
+depth = 45.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox8/StaticBody"]
+shape = SubResource( 10 )
+
+[node name="CSGBox10" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 2, -180 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox10/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox82" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 2, -144 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox82"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox82/StaticBody"]
+shape = SubResource( 12 )
+
+[node name="CSGBox83" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 2, -124 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox83"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox83/StaticBody"]
+shape = SubResource( 13 )
+
+[node name="CSGBox84" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -134 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox84"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox84/StaticBody"]
+shape = SubResource( 14 )
+
+[node name="CSGBox11" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2, -160 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox11"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox11/StaticBody"]
+shape = SubResource( 15 )
+
+[node name="CSGBox16" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2, -124 )
+width = 52.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox16"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox16/StaticBody"]
+shape = SubResource( 16 )
+
+[node name="CSGBox17" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -152 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox17"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox17/StaticBody"]
+shape = SubResource( 17 )
+
+[node name="CSGBox18" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -132 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox18"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox18/StaticBody"]
+shape = SubResource( 18 )
+
+[node name="CSGBox19" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -132 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox19"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox19/StaticBody"]
+shape = SubResource( 19 )
+
+[node name="CSGBox20" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -152 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox20"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox20/StaticBody"]
+shape = SubResource( 20 )
+
+[node name="CSGBox12" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -160 )
+width = 56.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox12"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox12/StaticBody"]
+shape = SubResource( 21 )
+
+[node name="CSGBox13" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -132 )
+width = 0.002
+height = 4.0
+depth = 56.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox13"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox13/StaticBody"]
+shape = SubResource( 22 )
+
+[node name="CSGBox14" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -58 )
+width = 0.002
+height = 4.0
+depth = 68.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox14"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox14/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox15" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -170 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox15"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox15/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox9" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -120.5 )
+width = 0.002
+height = 4.0
+depth = 25.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox9/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox21" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -98.5 )
+width = 0.002
+height = 4.0
+depth = 37.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox21"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox21/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox22" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -137.5 )
+width = 0.002
+height = 4.0
+depth = 37.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox22"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox22/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox23" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -151.75 )
+width = 0.002
+height = 4.0
+depth = 8.5
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox23"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox23/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox24" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -74.8 )
+width = 0.002
+height = 4.0
+depth = 27.6
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox24"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox24/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox27" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, -59.5 )
+width = 0.002
+height = 4.0
+depth = 41.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox27"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox27/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox28" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, -32.5 )
+width = 0.002
+height = 4.0
+depth = 9.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox28"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox28/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox29" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, -28 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox29"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox29/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox71" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, -36 )
+width = 8.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox71"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox71/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox72" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, -40 )
+width = 8.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox72"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox72/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox74" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, -48 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox74"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox74/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox75" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, -72 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox75"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox75/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox76" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -80 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox76"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox76/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox77" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -100 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox77"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox77/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox78" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -108 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox78"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox78/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox79" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -128 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox79"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox79/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox80" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -136 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox80"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox80/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox81" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2, -156 )
+width = 28.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox81"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox81/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox73" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, -38 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox73"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox73/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox30" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 2, -28 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox30"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox30/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox31" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 2, -44 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox31"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox31/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox32" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 2, -56 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox32"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox32/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox33" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 2, -76 )
+width = 9.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox33"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox33/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox34" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 2, -76 )
+width = 9.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox34"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox34/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox35" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, -52 )
+width = 0.002
+height = 4.0
+depth = 48.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox35"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox35/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox36" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -58 )
+width = 0.002
+height = 4.0
+depth = 36.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox36"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox36/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox38" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -56 )
+width = 0.002
+height = 4.0
+depth = 40.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox38"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox38/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox39" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -31 )
+width = 0.002
+height = 4.0
+depth = 6.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox39"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox39/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox42" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.5, 2, -28 )
+width = 9.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox42"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox42/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox40" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -39.5 )
+width = 0.002
+height = 4.0
+depth = 23.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox40"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox40/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox41" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -64.5 )
+width = 0.002
+height = 4.0
+depth = 23.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox41"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox41/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox37" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -33 )
+width = 0.002
+height = 4.0
+depth = 10.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox37"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox37/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox25" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -118 )
+width = 0.002
+height = 4.0
+depth = 55.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox25"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox25/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox26" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -43.5 )
+width = 0.002
+height = 4.0
+depth = 31.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox26"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox26/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox43" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -52 )
+width = 0.002
+height = 4.0
+depth = 48.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox43"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox43/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox44" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5, 2, -28 )
+width = 9.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox44"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox44/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox45" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -28 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox45"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox45/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox46" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -44 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox46"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox46/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox47" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -48 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox47"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox47/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox48" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -76 )
+width = 8.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox48"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox48/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox49" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 2, -76 )
+width = 10.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox49"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox49/StaticBody"]
+shape = SubResource( 23 )
+
+[node name="CSGBox50" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -76 )
+width = 8.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox50"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox50/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox97" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -76 )
+width = 8.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox97"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox97/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox98" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 2, -75 )
+width = 0.002
+height = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox98"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox98/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox99" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, -75 )
+width = 0.002
+height = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox99"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox99/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox100" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2, -74 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox100"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox100/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox65" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2, -56 )
+width = 20.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox65"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox65/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="CSGBox51" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -80 )
+width = 32.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox51"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox51/StaticBody"]
+shape = SubResource( 25 )
+
+[node name="CSGBox52" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -100 )
+width = 32.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox52"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox52/StaticBody"]
+shape = SubResource( 26 )
+
+[node name="CSGBox70" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, -120 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox70"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox70/StaticBody"]
+shape = SubResource( 27 )
+
+[node name="CSGBox53" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -100 )
+width = 0.002
+height = 4.0
+depth = 40.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox53"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox53/StaticBody"]
+shape = SubResource( 28 )
+
+[node name="CSGBox63" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -90 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox63"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox63/StaticBody"]
+shape = SubResource( 29 )
+
+[node name="CSGBox64" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2, -90 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox64"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox64/StaticBody"]
+shape = SubResource( 30 )
+
+[node name="CSGBox66" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -110 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox66"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox66/StaticBody"]
+shape = SubResource( 31 )
+
+[node name="CSGBox69" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -110 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox69"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox69/StaticBody"]
+shape = SubResource( 32 )
+
+[node name="CSGBox67" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -95.5 )
+width = 0.002
+height = 4.0
+depth = 9.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox67"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox67/StaticBody"]
+shape = SubResource( 33 )
+
+[node name="CSGBox68" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -84.5 )
+width = 0.002
+height = 4.0
+depth = 9.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox68"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox68/StaticBody"]
+shape = SubResource( 34 )
+
+[node name="CSGBox58" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -112 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox58"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox58/StaticBody"]
+shape = SubResource( 35 )
+
+[node name="CSGBox59" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -110 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox59"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox59/StaticBody"]
+shape = SubResource( 36 )
+
+[node name="CSGBox60" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -84.5 )
+width = 0.002
+height = 4.0
+depth = 9.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox60"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox60/StaticBody"]
+shape = SubResource( 37 )
+
+[node name="CSGBox61" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -95.5 )
+width = 0.002
+height = 4.0
+depth = 9.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox61"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox61/StaticBody"]
+shape = SubResource( 38 )
+
+[node name="CSGBox54" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2, -104 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox54"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox54/StaticBody"]
+shape = SubResource( 39 )
+
+[node name="CSGBox55" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -100 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox55"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox55/StaticBody"]
+shape = SubResource( 40 )
+
+[node name="CSGBox62" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -80 )
+width = 16.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox62"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox62/StaticBody"]
+shape = SubResource( 41 )
+
+[node name="CSGBox56" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 2, -120 )
+width = 7.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox56"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox56/StaticBody"]
+shape = SubResource( 42 )
+
+[node name="CSGBox57" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 2, -120 )
+width = 23.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox57"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox57/StaticBody"]
+shape = SubResource( 43 )
+
+[node name="CSGBox85" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, -164 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox85"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox85/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox86" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, -164 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox86"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox86/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox87" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -162 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox87"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox87/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox88" type="CSGBox" parent="wallz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -162 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox88"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox88/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox89" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50, 2, -94 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox89"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox89/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox90" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50, 2, -102 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox90"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox90/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox91" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48, 2, -104 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox91"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox91/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox92" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48, 2, -92 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox92"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox92/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox93" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -50, 2, -106 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox93"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox93/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox94" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -50, 2, -98 )
+width = 4.0
+height = 4.0
+depth = 0.002
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox94"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox94/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox95" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48, 2, -96 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox95"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox95/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="CSGBox96" type="CSGBox" parent="wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48, 2, -108 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="wallz/CSGBox96"]
+
+[node name="CollisionShape" type="CollisionShape" parent="wallz/CSGBox96/StaticBody"]
+shape = SubResource( 44 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -40 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24.5 )
+shape = SubResource( 45 )
+
+[node name="StaticBody2" type="StaticBody" parent="."]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -40 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 9 )
+shape = SubResource( 46 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 9 )
+shape = SubResource( 46 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 10 )
+shape = SubResource( 47 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 10 )
+shape = SubResource( 47 )
+
+[node name="doors" type="Spatial" parent="."]
+
+[node name="ddoors" type="Spatial" parent="doors"]
+
+[node name="ddoor" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, -26 )
+
+[node name="ddoor2" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -26 )
+
+[node name="ddoor3" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2, -44 )
+
+[node name="ddoor4" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 2, -100 )
+
+[node name="ddoor5" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -142 )
+
+[node name="ddoor6" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -142 )
+
+[node name="ddoor7" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2, -20 )
+
+[node name="ddoor8" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16, 2, -164 )
+
+[node name="ddoor9" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, -50, 2, -102 )
+
+[node name="ddoor10" parent="doors/ddoors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 50, 2, -98 )
+
+[node name="doors" type="Spatial" parent="doors"]
+
+[node name="door1" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 2, -35 )
+
+[node name="door2" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 2, -39 )
+
+[node name="door3" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 42, 2, -89.5 )
+
+[node name="door4" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12, 2, -76 )
+
+[node name="door5" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 2, -90 )
+
+[node name="door6" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -14, 2, -120 )
+
+[node name="door7" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 42, 2, -146.5 )
+
+[node name="door8" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -46, 2, -134 )
+
+[node name="door9" parent="doors/doors" instance=ExtResource( 11 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 26, 2, -38 )
+
+[node name="cdoors" type="Spatial" parent="doors"]
+
+[node name="cdoor" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2, -28 )
+
+[node name="cdoor2" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22, 2, -52 )
+
+[node name="cdoor3" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -13, 2, -76 )
+
+[node name="cdoor4" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 42, 2, -60 )
+
+[node name="cdoor5" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 2, -118 )
+
+[node name="cdoor6" parent="doors/cdoors" instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42, 2, -90 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+margin_left = 13.5186
+margin_top = 61.0271
+margin_right = 1228.52
+margin_bottom = 286.027
+rect_scale = Vector2( 2, 2 )
+text = "WARNING: THIS GAME HAS SOUND. TURN IT DOWN BEFORE JUMPING OR RUNNING!!!!!!
+
+-NORMAL CONTROLS-
+PRESS SPACE TO JUMP
+HOLD SHIFT TO RUN
+CLICK TO PUNCH
+
+-DEBUG CONTROLS-
+PRESS TAB TO UPGRADE SPEED (PRESS TWICE FOR BOOST MODE)
+ESC TO CLOSE GAME
+THERE ARE NO ITEMS OR NPCS YET. YOU CAN ONLY RUN AROUND FOR NOW
+RIGHT CLICK TO REMOVE THIS TEXT
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DONUTS" type="Spatial" parent="."]
+
+[node name="YellowDonut" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.627697, -26 )
+
+[node name="YellowDonut2" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.627697, -26 )
+
+[node name="YellowDonut3" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.627697, -26 )
+
+[node name="YellowDonut4" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -26 )
+
+[node name="YellowDonut5" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.627697, -26 )
+
+[node name="YellowDonut6" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.627697, -26 )
+
+[node name="YellowDonut7" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.627697, -26 )
+
+[node name="YellowDonut8" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0.627697, -26 )
+
+[node name="YellowDonut9" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.627697, -26 )
+
+[node name="YellowDonut10" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.627697, -26 )
+
+[node name="YellowDonut11" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.627697, -26 )
+
+[node name="YellowDonut12" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0.627697, -26 )
+
+[node name="YellowDonut13" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.627697, -78 )
+
+[node name="YellowDonut14" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.627697, -78 )
+
+[node name="YellowDonut15" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.627697, -78 )
+
+[node name="YellowDonut16" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0.627697, -78 )
+
+[node name="YellowDonut17" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.627697, -78 )
+
+[node name="YellowDonut18" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.627697, -78 )
+
+[node name="YellowDonut19" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.627697, -78 )
+
+[node name="YellowDonut20" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0.627697, -78 )
+
+[node name="YellowDonut21" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -44 )
+
+[node name="YellowDonut22" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -52 )
+
+[node name="YellowDonut23" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -60 )
+
+[node name="YellowDonut24" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -68 )
+
+[node name="YellowDonut25" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -90 )
+
+[node name="YellowDonut26" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -98 )
+
+[node name="YellowDonut27" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -106 )
+
+[node name="YellowDonut28" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.627697, -114 )
+
+[node name="YellowDonut177" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -63 )
+
+[node name="YellowDonut178" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -71 )
+
+[node name="YellowDonut179" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -79 )
+
+[node name="YellowDonut180" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -87 )
+
+[node name="YellowDonut181" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -109 )
+
+[node name="YellowDonut182" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -117 )
+
+[node name="YellowDonut183" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -125 )
+
+[node name="YellowDonut184" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0.627697, -133 )
+
+[node name="YellowDonut29" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.627697, -78 )
+
+[node name="YellowDonut30" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.627697, -86 )
+
+[node name="YellowDonut31" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.627697, -94 )
+
+[node name="YellowDonut32" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.627697, -102 )
+
+[node name="YellowDonut33" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -88 )
+
+[node name="YellowDonut34" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -96 )
+
+[node name="YellowDonut35" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -104 )
+
+[node name="YellowDonut36" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -112 )
+
+[node name="YellowDonut37" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -130 )
+
+[node name="YellowDonut38" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -138 )
+
+[node name="YellowDonut39" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -146 )
+
+[node name="YellowDonut40" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -154 )
+
+[node name="YellowDonut41" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -136 )
+
+[node name="YellowDonut42" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -140 )
+
+[node name="YellowDonut43" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -144 )
+
+[node name="YellowDonut44" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -148 )
+
+[node name="YellowDonut45" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -136 )
+
+[node name="YellowDonut46" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -140 )
+
+[node name="YellowDonut47" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -144 )
+
+[node name="YellowDonut48" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -148 )
+
+[node name="YellowDonut49" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -136 )
+
+[node name="YellowDonut50" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -140 )
+
+[node name="YellowDonut51" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -144 )
+
+[node name="YellowDonut52" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -148 )
+
+[node name="YellowDonut53" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -136 )
+
+[node name="YellowDonut54" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -140 )
+
+[node name="YellowDonut55" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -144 )
+
+[node name="YellowDonut56" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -148 )
+
+[node name="YellowDonut57" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -136 )
+
+[node name="YellowDonut58" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -140 )
+
+[node name="YellowDonut59" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -144 )
+
+[node name="YellowDonut60" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -148 )
+
+[node name="YellowDonut61" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -136 )
+
+[node name="YellowDonut62" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -140 )
+
+[node name="YellowDonut63" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -144 )
+
+[node name="YellowDonut64" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -148 )
+
+[node name="YellowDonut65" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -136 )
+
+[node name="YellowDonut66" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -140 )
+
+[node name="YellowDonut67" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -144 )
+
+[node name="YellowDonut68" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -148 )
+
+[node name="YellowDonut69" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -136 )
+
+[node name="YellowDonut70" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -140 )
+
+[node name="YellowDonut71" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -144 )
+
+[node name="YellowDonut72" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -148 )
+
+[node name="YellowDonut73" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -136 )
+
+[node name="YellowDonut74" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -140 )
+
+[node name="YellowDonut75" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -144 )
+
+[node name="YellowDonut76" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -148 )
+
+[node name="YellowDonut77" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -136 )
+
+[node name="YellowDonut78" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -140 )
+
+[node name="YellowDonut79" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -144 )
+
+[node name="YellowDonut80" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -148 )
+
+[node name="YellowDonut81" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -136 )
+
+[node name="YellowDonut82" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -140 )
+
+[node name="YellowDonut83" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -144 )
+
+[node name="YellowDonut84" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -148 )
+
+[node name="YellowDonut85" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -136 )
+
+[node name="YellowDonut86" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -140 )
+
+[node name="YellowDonut87" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -144 )
+
+[node name="YellowDonut88" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -148 )
+
+[node name="YellowDonut89" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -136 )
+
+[node name="YellowDonut90" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -140 )
+
+[node name="YellowDonut91" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -144 )
+
+[node name="YellowDonut92" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -148 )
+
+[node name="YellowDonut93" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -136 )
+
+[node name="YellowDonut94" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -140 )
+
+[node name="YellowDonut95" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -144 )
+
+[node name="YellowDonut96" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -148 )
+
+[node name="YellowDonut97" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -136 )
+
+[node name="YellowDonut98" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -140 )
+
+[node name="YellowDonut99" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -144 )
+
+[node name="YellowDonut100" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -148 )
+
+[node name="YellowDonut101" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.627697, -150 )
+
+[node name="YellowDonut102" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -134 )
+
+[node name="YellowDonut103" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -138 )
+
+[node name="YellowDonut104" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -142 )
+
+[node name="YellowDonut105" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -146 )
+
+[node name="YellowDonut106" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -134 )
+
+[node name="YellowDonut107" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -138 )
+
+[node name="YellowDonut108" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -142 )
+
+[node name="YellowDonut109" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -146 )
+
+[node name="YellowDonut110" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -134 )
+
+[node name="YellowDonut111" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -138 )
+
+[node name="YellowDonut112" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -142 )
+
+[node name="YellowDonut113" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -146 )
+
+[node name="YellowDonut114" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -134 )
+
+[node name="YellowDonut115" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -138 )
+
+[node name="YellowDonut116" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -142 )
+
+[node name="YellowDonut117" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -146 )
+
+[node name="YellowDonut118" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -134 )
+
+[node name="YellowDonut119" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -138 )
+
+[node name="YellowDonut120" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -142 )
+
+[node name="YellowDonut121" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -146 )
+
+[node name="YellowDonut122" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -134 )
+
+[node name="YellowDonut123" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -138 )
+
+[node name="YellowDonut124" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -142 )
+
+[node name="YellowDonut125" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -146 )
+
+[node name="YellowDonut126" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -134 )
+
+[node name="YellowDonut127" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -138 )
+
+[node name="YellowDonut128" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -142 )
+
+[node name="YellowDonut129" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -146 )
+
+[node name="YellowDonut130" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -134 )
+
+[node name="YellowDonut131" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -138 )
+
+[node name="YellowDonut132" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -142 )
+
+[node name="YellowDonut133" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -146 )
+
+[node name="YellowDonut134" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -134 )
+
+[node name="YellowDonut135" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -138 )
+
+[node name="YellowDonut136" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -142 )
+
+[node name="YellowDonut137" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -146 )
+
+[node name="YellowDonut138" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -134 )
+
+[node name="YellowDonut139" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -138 )
+
+[node name="YellowDonut140" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -142 )
+
+[node name="YellowDonut141" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -146 )
+
+[node name="YellowDonut142" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -134 )
+
+[node name="YellowDonut143" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -138 )
+
+[node name="YellowDonut144" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -142 )
+
+[node name="YellowDonut145" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -146 )
+
+[node name="YellowDonut146" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -134 )
+
+[node name="YellowDonut147" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -138 )
+
+[node name="YellowDonut148" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -142 )
+
+[node name="YellowDonut149" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -146 )
+
+[node name="YellowDonut150" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -134 )
+
+[node name="YellowDonut151" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -138 )
+
+[node name="YellowDonut152" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -142 )
+
+[node name="YellowDonut153" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -146 )
+
+[node name="YellowDonut154" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -134 )
+
+[node name="YellowDonut155" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -138 )
+
+[node name="YellowDonut156" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -142 )
+
+[node name="YellowDonut157" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -146 )
+
+[node name="YellowDonut158" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -134 )
+
+[node name="YellowDonut159" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -138 )
+
+[node name="YellowDonut160" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -142 )
+
+[node name="YellowDonut161" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -146 )
+
+[node name="YellowDonut162" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.627697, -150 )
+
+[node name="YellowDonut163" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.627697, -150 )
+
+[node name="YellowDonut164" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.627697, -150 )
+
+[node name="YellowDonut165" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.627697, -150 )
+
+[node name="YellowDonut166" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.627697, -150 )
+
+[node name="YellowDonut167" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.627697, -150 )
+
+[node name="YellowDonut168" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.627697, -150 )
+
+[node name="YellowDonut169" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.627697, -150 )
+
+[node name="YellowDonut170" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0.627697, -150 )
+
+[node name="YellowDonut171" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.627697, -150 )
+
+[node name="YellowDonut172" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.627697, -150 )
+
+[node name="YellowDonut173" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0.627697, -150 )
+
+[node name="YellowDonut174" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.627697, -150 )
+
+[node name="YellowDonut175" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.627697, -150 )
+
+[node name="YellowDonut176" parent="DONUTS" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.627697, -150 )
+
+[node name="shop" type="Spatial" parent="."]
+
+[node name="mitee" parent="shop" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2.34378, -74.9189 )
+
+[node name="mitee2" parent="shop" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2.34378, -109.919 )
+
+[node name="mitee3" parent="shop" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.34378, -157.919 )
+
+[node name="emerdoods" type="Spatial" parent="."]
+
+[node name="emerald" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, -36 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 16 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald2" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, -36 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 17 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald2/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald3" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, -60 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 19 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald3/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald4" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, -90 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 21 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald4/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald5" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, -146 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 22 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald5/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald6" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, -107 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 23 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald6/Area"]
+shape = SubResource( 48 )
+
+[node name="emerald7" type="Spatial" parent="emerdoods"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 1, -139 )
+script = ExtResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="emerdoods/emerald7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+billboard = 1
+texture = ExtResource( 20 )
+
+[node name="Area" type="Area" parent="emerdoods/emerald7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="emerdoods/emerald7/Area"]
+shape = SubResource( 48 )
+
+[node name="tlol" type="Spatial" parent="."]
+
+[node name="Path" type="Path" parent="tlol"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -26 )
+curve = SubResource( 49 )
+
+[node name="PathFollow" type="PathFollow" parent="tlol/Path"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14116, -0.00683259, -0.0131683 )
+
+[node name="tlels" type="Area" parent="tlol/Path/PathFollow"]
+script = ExtResource( 25 )
+
+[node name="CollisionShape" type="CollisionShape" parent="tlol/Path/PathFollow/tlels"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1, 0 )
+shape = SubResource( 50 )
+
+[node name="Sprite3D" type="Sprite3D" parent="tlol/Path/PathFollow/tlels"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+billboard = 2
+texture = ExtResource( 24 )
+
+[node name="tface" type="CanvasLayer" parent="tlol/Path/PathFollow/tlels"]
+
+[node name="normal" type="Sprite" parent="tlol/Path/PathFollow/tlels/tface"]
+position = Vector2( 320, 540.762 )
+scale = Vector2( 1, 0.988889 )
+texture = ExtResource( 28 )
+
+[node name="huh" type="Sprite" parent="tlol/Path/PathFollow/tlels/tface"]
+visible = false
+position = Vector2( 320, 540.762 )
+scale = Vector2( 1, 0.988889 )
+texture = ExtResource( 29 )
+
+[node name="gasp" type="Sprite" parent="tlol/Path/PathFollow/tlels/tface"]
+visible = false
+position = Vector2( 320, 540.762 )
+scale = Vector2( 1, 0.988889 )
+texture = ExtResource( 30 )
+
+[node name="happy" type="Sprite" parent="tlol/Path/PathFollow/tlels/tface"]
+visible = false
+position = Vector2( 320, 540.762 )
+scale = Vector2( 1, 0.988889 )
+texture = ExtResource( 31 )
+
+[node name="huh2" type="Sprite" parent="tlol/Path/PathFollow/tlels/tface"]
+visible = false
+position = Vector2( 320, 540.762 )
+scale = Vector2( 1, 0.988889 )
+texture = ExtResource( 32 )
+
+[node name="Navigation" type="Navigation" parent="tlol"]
+visible = false
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="tlol/Navigation"]
+navmesh = SubResource( 51 )
+
+[node name="floor" type="CSGCombiner" parent="tlol/Navigation/NavigationMeshInstance"]
+
+[node name="floor2" type="CSGCombiner" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+
+[node name="CSGBox3" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -36 )
+width = 40.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -50 )
+width = 20.0
+height = 0.002
+depth = 12.0
+material = SubResource( 1 )
+
+[node name="CSGBox5" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -62 )
+width = 20.0
+height = 0.002
+depth = 28.0
+material = SubResource( 1 )
+
+[node name="CSGBox6" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -36 )
+width = 20.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox7" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -66 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox8" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -60 )
+width = 16.0
+height = 0.002
+depth = 24.0
+material = SubResource( 1 )
+
+[node name="CSGBox9" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -38 )
+width = 8.0
+height = 0.002
+depth = 4.0
+material = SubResource( 1 )
+
+[node name="CSGBox10" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -90 )
+width = 16.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox11" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox12" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -112 )
+width = 16.0
+height = 0.002
+depth = 16.0
+material = SubResource( 1 )
+
+[node name="CSGBox13" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -134 )
+width = 20.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox14" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -146 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox15" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -118 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox16" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor/floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -90 )
+width = 28.0
+height = 0.002
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24 )
+width = 12.0
+height = 0.002
+depth = 8.0
+material = SubResource( 2 )
+
+[node name="CSGBox2" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox3" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -26 )
+width = 40.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox4" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -104 )
+width = 4.0
+height = 0.002
+depth = 152.0
+material = SubResource( 2 )
+
+[node name="CSGBox5" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, -94 )
+width = 4.0
+height = 0.002
+depth = 132.0
+material = SubResource( 2 )
+
+[node name="CSGBox6" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -158 )
+width = 84.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox7" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -138 )
+width = 56.0
+height = 0.002
+depth = 36.0
+material = SubResource( 2 )
+
+[node name="CSGBox8" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -110 )
+width = 4.0
+height = 0.002
+depth = 20.0
+material = SubResource( 2 )
+
+[node name="CSGBox9" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -90 )
+width = 4.0
+height = 0.002
+depth = 28.0
+material = SubResource( 2 )
+
+[node name="CSGBox10" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -102 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox11" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox19" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, -74 )
+width = 6.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox12" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -78 )
+width = 32.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="CSGBox13" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox14" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -52 )
+width = 4.0
+height = 0.002
+depth = 48.0
+material = SubResource( 2 )
+
+[node name="CSGBox15" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -100 )
+width = 4.0
+height = 0.002
+depth = 40.0
+material = SubResource( 2 )
+
+[node name="CSGBox16" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -98 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox17" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -102 )
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 2 )
+
+[node name="CSGBox18" type="CSGBox" parent="tlol/Navigation/NavigationMeshInstance/floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -162 )
+width = 12.0
+height = 0.002
+depth = 4.0
+material = SubResource( 2 )
+
+[node name="class" type="Spatial" parent="."]
+
+[node name="class1" type="Area" parent="class" groups=["c1", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape" type="CollisionShape" parent="class/class1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64586, 0, 0 )
+shape = SubResource( 52 )
+
+[node name="class2" type="Area" parent="class" groups=["c2", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="class/class2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4496, 0, 0 )
+shape = SubResource( 53 )
+
+[node name="class3" type="Area" parent="class" groups=["c3", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="class/class3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.6171, 0, -54 )
+shape = SubResource( 54 )
+
+[node name="class4" type="Area" parent="class" groups=["c4", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape12" type="CollisionShape" parent="class/class4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -28.1541 )
+shape = SubResource( 55 )
+
+[node name="class5" type="Area" parent="class" groups=["c5", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape11" type="CollisionShape" parent="class/class5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4111, 0, -54 )
+shape = SubResource( 56 )
+
+[node name="class6" type="Area" parent="class" groups=["c6", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape13" type="CollisionShape" parent="class/class6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -74.1541 )
+shape = SubResource( 57 )
+
+[node name="class7" type="Area" parent="class" groups=["c7", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="class/class7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5357, 0, -110 )
+shape = SubResource( 58 )
+
+[node name="class8" type="Area" parent="class" groups=["c8", "class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="class/class8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -45.6055, 0, -98 )
+shape = SubResource( 59 )
+
+[node name="fac1" type="Area" parent="class" groups=["class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="class/fac1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -7.58309 )
+shape = SubResource( 60 )
+
+[node name="fac2" type="Area" parent="class" groups=["class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="class/fac2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24.5074 )
+shape = SubResource( 61 )
+
+[node name="fac3" type="Area" parent="class" groups=["class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="class/fac3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44.3714, 0, -24 )
+shape = SubResource( 62 )
+
+[node name="fac4" type="Area" parent="class" groups=["class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="class/fac4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41.846, 0, -82 )
+shape = SubResource( 63 )
+
+[node name="fac5" type="Area" parent="class" groups=["class"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -36 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape10" type="CollisionShape" parent="class/fac5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3927, 0, -54 )
+shape = SubResource( 64 )
+
+[node name="box" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -43 )
+
+[node name="Sprite3D" type="Sprite3D" parent="box"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+billboard = 2
+texture = ExtResource( 27 )
+
+[node name="Spatial2" type="Spatial" parent="."]
+
+[connection signal="ring" from="DONUTS/YellowDonut" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut2" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut3" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut4" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut5" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut6" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut7" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut8" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut9" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut10" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut11" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut12" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut13" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut14" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut15" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut16" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut17" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut18" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut19" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut20" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut21" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut22" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut23" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut24" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut25" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut26" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut27" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut28" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut177" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut178" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut179" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut180" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut181" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut182" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut183" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut184" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut29" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut30" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut31" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut32" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut33" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut34" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut35" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut36" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut37" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut38" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut39" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut40" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut41" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut42" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut43" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut44" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut45" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut46" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut47" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut48" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut49" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut50" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut51" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut52" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut53" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut54" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut55" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut56" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut57" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut58" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut59" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut60" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut61" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut62" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut63" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut64" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut65" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut66" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut67" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut68" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut69" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut70" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut71" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut72" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut73" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut74" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut75" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut76" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut77" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut78" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut79" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut80" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut81" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut82" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut83" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut84" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut85" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut86" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut87" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut88" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut89" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut90" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut91" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut92" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut93" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut94" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut95" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut96" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut97" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut98" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut99" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut100" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut101" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut102" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut103" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut104" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut105" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut106" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut107" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut108" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut109" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut110" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut111" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut112" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut113" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut114" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut115" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut116" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut117" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut118" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut119" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut120" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut121" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut122" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut123" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut124" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut125" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut126" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut127" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut128" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut129" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut130" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut131" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut132" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut133" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut134" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut135" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut136" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut137" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut138" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut139" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut140" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut141" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut142" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut143" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut144" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut145" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut146" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut147" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut148" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut149" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut150" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut151" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut152" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut153" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut154" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut155" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut156" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut157" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut158" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut159" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut160" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut161" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut162" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut163" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut164" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut165" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut166" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut167" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut168" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut169" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut170" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut171" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut172" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut173" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut174" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut175" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="ring" from="DONUTS/YellowDonut176" to="Player" method="_on_YellowDonut_ring"]
+[connection signal="area_entered" from="emerdoods/emerald/Area" to="emerdoods/emerald" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald2/Area" to="emerdoods/emerald2" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald3/Area" to="emerdoods/emerald3" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald4/Area" to="emerdoods/emerald4" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald5/Area" to="emerdoods/emerald5" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald6/Area" to="emerdoods/emerald6" method="_on_Area_area_entered"]
+[connection signal="area_entered" from="emerdoods/emerald7/Area" to="emerdoods/emerald7" method="_on_Area_area_entered"]
+[connection signal="body_entered" from="class/class1" to="class/class1" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class1" to="class/class1" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class2" to="class/class2" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class2" to="class/class2" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class3" to="class/class3" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class3" to="class/class3" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class4" to="class/class4" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class4" to="class/class4" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class5" to="class/class5" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class5" to="class/class5" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class6" to="class/class6" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class6" to="class/class6" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class7" to="class/class7" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class7" to="class/class7" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/class8" to="class/class8" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/class8" to="class/class8" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/fac1" to="class/fac1" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/fac1" to="class/fac1" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/fac2" to="class/fac2" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/fac2" to="class/fac2" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/fac3" to="class/fac3" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/fac3" to="class/fac3" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/fac4" to="class/fac4" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/fac4" to="class/fac4" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="class/fac5" to="class/fac5" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="class/fac5" to="class/fac5" method="_on_Area_body_exited"]

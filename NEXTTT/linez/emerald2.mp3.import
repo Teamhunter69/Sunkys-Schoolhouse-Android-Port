@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/emerald2.mp3-cd547983f1d262cbabe05ef52f1f6a08.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/linez/emerald2.mp3"
+dest_files=[ "res://.import/emerald2.mp3-cd547983f1d262cbabe05ef52f1f6a08.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

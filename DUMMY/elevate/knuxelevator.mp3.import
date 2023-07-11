@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knuxelevator.mp3-9f31eba62a114c66cfbcf6d68793b34d.mp3str"
+
+[deps]
+
+source_file="res://DUMMY/elevate/knuxelevator.mp3"
+dest_files=[ "res://.import/knuxelevator.mp3-9f31eba62a114c66cfbcf6d68793b34d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

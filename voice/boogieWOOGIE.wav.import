@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boogieWOOGIE.wav-1fe8f890a4b8b6e93f502dbb9b08691a.sample"
+
+[deps]
+
+source_file="res://voice/boogieWOOGIE.wav"
+dest_files=[ "res://.import/boogieWOOGIE.wav-1fe8f890a4b8b6e93f502dbb9b08691a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

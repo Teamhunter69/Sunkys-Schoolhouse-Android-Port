@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/output_12.wav-3da0ca830e868f9d2f6d90498ddaf02e.sample"
+
+[deps]
+
+source_file="res://KAEHOTICKS/linez/output_12.wav"
+dest_files=[ "res://.import/output_12.wav-3da0ca830e868f9d2f6d90498ddaf02e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

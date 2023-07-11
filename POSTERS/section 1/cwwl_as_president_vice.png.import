@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/cwwl_as_president_vice.png-ca68778fede29f254b09c55f30a1898c.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://POSTERS/section 1/cwwl_as_president_vice.png"
+dest_files=[ "res://.import/cwwl_as_president_vice.png-ca68778fede29f254b09c55f30a1898c.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/whatnow.mp3-1b4be4b73e47ebb2a6c6d97da1b50ac8.mp3str"
+
+[deps]
+
+source_file="res://GFUN/lines/whatnow.mp3"
+dest_files=[ "res://.import/whatnow.mp3-1b4be4b73e47ebb2a6c6d97da1b50ac8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

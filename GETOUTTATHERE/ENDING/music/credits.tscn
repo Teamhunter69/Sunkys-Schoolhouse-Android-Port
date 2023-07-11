@@ -1,0 +1,389 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://GETOUTTATHERE/ENDING/sunk/p31_45.png" type="Texture" id=1]
+[ext_resource path="res://GETOUTTATHERE/ENDING/sunk/p31_58.png" type="Texture" id=2]
+[ext_resource path="res://GETOUTTATHERE/ENDING/music/CREDITZ.png" type="Texture" id=3]
+[ext_resource path="res://GETOUTTATHERE/ENDING/music/credits.gd" type="Script" id=4]
+[ext_resource path="res://GETOUTTATHERE/ENDING/music/april_schools.mp3" type="AudioStream" id=5]
+[ext_resource path="res://GETOUTTATHERE/ENDING/music/CREDITS.mp3" type="AudioStream" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.733333, 0, 0.690196, 1 )
+
+[sub_resource type="Animation" id=2]
+length = 8.24
+step = 0.08
+tracks/0/type = "value"
+tracks/0/path = NodePath("p31_45:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 8.16 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -192, 360 ), Vector2( 640, 360 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("p31_45:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.08, 0.16, 0.24, 0.32, 0.4, 0.48, 0.56, 0.64, 0.72, 0.8, 0.88, 0.96, 1.04, 1.12, 1.2, 1.28, 1.36, 1.44, 1.52, 1.6, 1.68, 1.76, 1.84, 1.92, 2, 2.08, 2.16, 2.24, 2.32, 2.4, 2.48, 2.56, 2.64, 2.72, 2.8, 2.88, 2.96, 3.04, 3.12, 3.2, 3.28, 3.36, 3.44, 3.52, 3.6, 3.68, 3.76, 3.84, 3.92, 4, 4.08, 4.16, 4.24, 4.32, 4.4, 4.48, 4.56, 4.64, 4.72, 4.8, 4.88, 4.96, 5.04, 5.12, 5.2, 5.28, 5.36, 5.44, 5.52, 5.6, 5.68, 5.76, 5.84, 5.92, 6, 6.08, 6.16, 6.24, 6.32, 6.4, 6.48, 6.56, 6.64, 6.72, 6.8, 6.88, 6.96, 7.04, 7.12, 7.2, 7.28, 7.36, 7.44, 7.52, 7.6, 7.68, 7.76, 7.84, 7.92, 8, 8.08, 8.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CREDITZ:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2, 4.4, 8.24 ),
+"transitions": PoolRealArray( 1, 4, 2, 1 ),
+"update": 0,
+"values": [ Vector2( 640, -6856 ), Vector2( 640, -6856 ), Vector2( 1962.22, -6494.89 ), Vector2( 2320, -1608 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CREDITZ:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CREDITZ:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2, 4.4 ),
+"transitions": PoolRealArray( 1, 4, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 10.4167 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("AudioStreamPlayer:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Panel:custom_styles/panel:bg_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("p31_45:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CREDITZ:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 8.24 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "dance1"
+length = 1.12
+loop = true
+step = 0.08
+tracks/0/type = "value"
+tracks/0/path = NodePath("p31_45:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.08, 0.16, 0.4, 0.48, 0.56, 0.64, 0.72, 0.96, 1.04 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 4, 3, 3, 4, 5, 4, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("p31_45:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.24, 0.32, 0.8, 0.88 ),
+"transitions": PoolRealArray( 1e+06, 1e+06, 1e+06, 1e+06, 1e+06 ),
+"update": 0,
+"values": [ Vector2( 640, 360 ), Vector2( 640, 344 ), Vector2( 640, 360 ), Vector2( 640, 344 ), Vector2( 640, 360 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("p31_45:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.56 ),
+"transitions": PoolRealArray( 1e+06, 1e+06 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( -1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 100.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CREDITZ:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5, 95 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 7576 ), Vector2( 640, 7576 ), Vector2( 640, -6856 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("p31_46:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("p31_45:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -192, 360 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CREDITZ:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CREDITZ:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CREDITZ:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 2 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CREDITZ:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("AudioStreamPlayer:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("AudioStreamPlayer3:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 100 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "schooled"
+length = 8.8
+step = 0.08
+tracks/0/type = "value"
+tracks/0/path = NodePath("p31_46:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 8.16 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("p31_46:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 8.16 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 640, 360 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("p31_46:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 8.16, 8.48, 8.8 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 0.2 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "glow"
+length = 16.0
+loop = true
+step = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:custom_styles/panel:bg_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4, 6, 8, 10, 12, 14, 16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.733333, 0, 0.690196, 1 ), Color( 0.282353, 0, 0.733333, 1 ), Color( 0, 0.337255, 0.733333, 1 ), Color( 0, 0.733333, 0.631373, 1 ), Color( 0.00392157, 0.733333, 0, 1 ), Color( 0.733333, 0.705882, 0, 1 ), Color( 0.733333, 0.396078, 0, 1 ), Color( 0.733333, 0, 0, 1 ), Color( 0.733333, 0, 0.690196, 1 ) ]
+}
+
+[node name="credits" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CREDITZ" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 640, 7576 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/dance0 = SubResource( 2 )
+anims/dance1 = SubResource( 3 )
+anims/scroll = SubResource( 4 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+anims/schooled = SubResource( 5 )
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
+anims/glow = SubResource( 6 )
+
+[node name="p31_45" type="Sprite" parent="."]
+position = Vector2( -192, 360 )
+texture = ExtResource( 1 )
+hframes = 3
+vframes = 2
+
+[node name="p31_46" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -3.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -3.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -15.0
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Neeeeeeenja.wav-0eed6460c13e74b138a6e29a2e5cd8e3.sample"
+
+[deps]
+
+source_file="res://KAEHOTICKS/linez/Neeeeeeenja.wav"
+dest_files=[ "res://.import/Neeeeeeenja.wav-0eed6460c13e74b138a6e29a2e5cd8e3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

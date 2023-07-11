@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/glass2.mp3-ff79543d39db2edb7b352c65c058f39f.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/glass2.mp3"
+dest_files=[ "res://.import/glass2.mp3-ff79543d39db2edb7b352c65c058f39f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

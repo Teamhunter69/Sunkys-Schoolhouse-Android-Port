@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sonic 1 boom.ogg-31e2b3c578cfdc5471c4dab5693fe6b4.oggstr"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/crem/Sonic 1 boom.ogg"
+dest_files=[ "res://.import/Sonic 1 boom.ogg-31e2b3c578cfdc5471c4dab5693fe6b4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

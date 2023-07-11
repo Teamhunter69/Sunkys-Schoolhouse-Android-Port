@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SHintro2.mp3-68a9b0b0f0f5071d3138937ec69dfb9e.mp3str"
+
+[deps]
+
+source_file="res://GFUN/lines/SHintro2.mp3"
+dest_files=[ "res://.import/SHintro2.mp3-68a9b0b0f0f5071d3138937ec69dfb9e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

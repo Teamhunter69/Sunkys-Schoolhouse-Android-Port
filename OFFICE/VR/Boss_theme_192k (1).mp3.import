@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Boss_theme_192k (1).mp3-9fd4bdcf3b59c08bf07a6ea089ec07ba.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/VR/Boss_theme_192k (1).mp3"
+dest_files=[ "res://.import/Boss_theme_192k (1).mp3-9fd4bdcf3b59c08bf07a6ea089ec07ba.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

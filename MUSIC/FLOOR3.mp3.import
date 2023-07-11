@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/FLOOR3.mp3-679846065f54aad5df33ad799d4720b2.mp3str"
+
+[deps]
+
+source_file="res://MUSIC/FLOOR3.mp3"
+dest_files=[ "res://.import/FLOOR3.mp3-679846065f54aad5df33ad799d4720b2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

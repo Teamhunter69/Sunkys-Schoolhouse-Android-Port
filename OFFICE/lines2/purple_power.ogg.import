@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/purple_power.ogg-2fef4f380329a4572d94fe7e55940a8a.oggstr"
+
+[deps]
+
+source_file="res://OFFICE/lines2/purple_power.ogg"
+dest_files=[ "res://.import/purple_power.ogg-2fef4f380329a4572d94fe7e55940a8a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

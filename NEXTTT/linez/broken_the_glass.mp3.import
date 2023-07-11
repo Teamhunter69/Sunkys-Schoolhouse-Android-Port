@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/broken_the_glass.mp3-0be0a7f1cc4919b9ba1526ddf002f365.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/linez/broken_the_glass.mp3"
+dest_files=[ "res://.import/broken_the_glass.mp3-0be0a7f1cc4919b9ba1526ddf002f365.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

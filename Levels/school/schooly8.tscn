@@ -1,0 +1,1101 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://NEXTTT/brick15.png" type="Texture" id=2]
+[ext_resource path="res://Levels/school/schoolyB.gd" type="Script" id=3]
+[ext_resource path="res://wall.gd" type="Script" id=4]
+[ext_resource path="res://NEXTTT/floor9.png" type="Texture" id=5]
+[ext_resource path="res://door.png" type="Texture" id=6]
+[ext_resource path="res://Levels/school/t2.gd" type="Script" id=7]
+[ext_resource path="res://NEXTTT/ceiling9.png" type="Texture" id=8]
+[ext_resource path="res://NEXTTT/generator.png" type="Texture" id=9]
+[ext_resource path="res://NEXTTT/flur.gd" type="Script" id=10]
+[ext_resource path="res://NEXTTT/glass.mp3" type="AudioStream" id=11]
+[ext_resource path="res://NEXTTT/glass2.mp3" type="AudioStream" id=12]
+[ext_resource path="res://NEXTTT/tlels3.png" type="Texture" id=13]
+[ext_resource path="res://NEXTTT/tlels2.png" type="Texture" id=14]
+[ext_resource path="res://NEXTTT/tlels4.png" type="Texture" id=17]
+[ext_resource path="res://Levels/school/tlels.png" type="Texture" id=18]
+[ext_resource path="res://NEXTTT/linez/what_the_heck_are_you_doing.mp3" type="AudioStream" id=19]
+[ext_resource path="res://NEXTTT/linez/steal.mp3" type="AudioStream" id=20]
+[ext_resource path="res://NEXTTT/linez/hey_stop.mp3" type="AudioStream" id=21]
+[ext_resource path="res://NEXTTT/linez/hurted.mp3" type="AudioStream" id=22]
+[ext_resource path="res://NEXTTT/linez/makes_sense.mp3" type="AudioStream" id=23]
+[ext_resource path="res://NEXTTT/linez/broken_the_glass.mp3" type="AudioStream" id=24]
+[ext_resource path="res://OFFICE/linesR/yes.mp3" type="AudioStream" id=25]
+[ext_resource path="res://KAEHOTICKS/pawnch.wav" type="AudioStream" id=26]
+[ext_resource path="res://NEXTTT/dundun.png" type="Texture" id=27]
+[ext_resource path="res://NEXTTT/emerald.mp3" type="AudioStream" id=28]
+[ext_resource path="res://NEXTTT/linez/emerald2.mp3" type="AudioStream" id=29]
+[ext_resource path="res://NEXTTT/linez/emerald1.mp3" type="AudioStream" id=30]
+[ext_resource path="res://NEXTTT/linez/emerald6.mp3" type="AudioStream" id=31]
+[ext_resource path="res://NEXTTT/linez/emerald3.mp3" type="AudioStream" id=32]
+[ext_resource path="res://NEXTTT/linez/emerald4.mp3" type="AudioStream" id=33]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 6, 0.001, 2 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 75, 0.001, 33 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 2.82478, 0.001, 2 )
+
+[sub_resource type="Animation" id=4]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -124.5, 55.5, -51.5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 90, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("flur/tlels:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("flur/Sprite3D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=10]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 1, 0.25, 1 )
+uv1_offset = Vector3( 0, 0.5, 0 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="CylinderShape" id=12]
+height = 5.0
+radius = 1.5
+
+[sub_resource type="Animation" id=13]
+resource_name = "ding"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer2:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "dong"
+length = 34.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.00132812, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer2:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../../Player:translation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -137, 51.15, -89.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../../Player:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.6, 3.1, 28.8, 29.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 6.10666e-13, 0 ), Vector3( 0, 6.10666e-13, 0 ), Vector3( 0, -180, 0 ), Vector3( 0, -180, 0 ), Vector3( 0, 6.10666e-13, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../tlels:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.1, 13.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../tlels2:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 18, 24.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../tlels3:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 24.8, 26.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("../tlels3:translation:x")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( -137, -1e+07, 0, 0.25, 0, -137, 0, 0, 0, 0, -137, 0, 0, 0, 0, -125, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 24.8, 25.8, 26.2 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("../tlels3:translation:y")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 51.749, -1e+07, 0, 0.25, 0, 51.749, 0, 0, 0, 0, 53.749, -0.25, 0, 0.25, 0, 51.5937, 0, 0, 0, 0, 53.5937, 0, 0, 0, 0, 51.5937, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 24.8, 25.3, 25.8, 26, 26.2 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("../tlels3:translation:z")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -86.5, -1e+07, 0, 0.25, 0, -86.5, 0, 0, 0, 0, -70.5, 0, 0, 0, 0, -70.5, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 24.8, 25.8, 26.2 )
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("../tlels3:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 25.8, 26.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 6.10666e-13, 0 ), Vector3( 0, 0, -360 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("../tlels3:billboard")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 25.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("../tlels4:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 13.4, 18 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("../STOP:playing")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 1, 2.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("../STOP2:playing")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 3.1, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("../STOP3:playing")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 7.8, 12.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("../STOP4:playing")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 13.4, 15.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("../R1:playing")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 12.3, 13.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("../STOP5:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 18, 24.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("../STOP6:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 24.7, 27.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("../STOP6:volume_db")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 24.8, 26.2, 26.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -20.0, -30.0, -40.0, -80.0 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("AudioStreamPlayer3:playing")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 24.8, 25.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("AudioStreamPlayer4:playing")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 30.8, 34.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("../../dundun:visible")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 30.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("../../dundun:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 30.3, 30.8, 31.6, 33.8, 34.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath(".:frame")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 30.8 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("../AudioStreamPlayer3:playing")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 5, 7.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("../AudioStreamPlayer5:playing")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 28.8, 30.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 2, 2, 2 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 2, 2, 1 )
+
+[sub_resource type="Animation" id=17]
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 6, 2, 1 )
+
+[sub_resource type="Animation" id=20]
+resource_name = "here"
+length = 4.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0181211, 4.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "here2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AudioStreamPlayer2:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.00497497, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[node name="schooly" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96, 42, 2 )
+
+[node name="CollisionShape15" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 12, -53.5 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape20" type="CollisionShape" parent="StaticBody"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -41, 8, -85.5 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape17" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, -41, 10, -53.5 )
+shape = SubResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 8.0
+margin_top = 688.0
+margin_right = 168.0
+margin_bottom = 720.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+anims/in = SubResource( 4 )
+anims/out = SubResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/start = SubResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1.3, 0, -1.06581e-14, 0, 1, -137, 51.15, -89.5 )
+
+[node name="Position3D" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -69, 44, -28 )
+
+[node name="flur" type="Spatial" parent="."]
+script = ExtResource( 10 )
+
+[node name="wallz" type="Spatial" parent="flur"]
+
+[node name="CSGBox117" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -129.001, 53.9971, -51.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 7 )
+
+[node name="CSGBox121" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.09086e-08, -0.707107, 0.707107, -3.09086e-08, 0.707107, 0.707107, -1, 0, -4.37114e-08, -137.001, 51.9971, -51.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 5.668
+material = SubResource( 7 )
+
+[node name="CSGBox128" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.09086e-08, -0.707107, 0.707107, -3.09086e-08, 0.707107, 0.707107, -1, 0, -4.37114e-08, -141.001, 55.9971, -51.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 5.668
+material = SubResource( 8 )
+
+[node name="CSGBox120" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -133.001, 49.9971, -55.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 12.0
+material = SubResource( 7 )
+
+[node name="CSGBox130" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -125.001, 49.9971, -61.4991 )
+snap = 0.0001
+width = 16.0
+height = 0.002
+depth = 4.0
+material = SubResource( 7 )
+
+[node name="CSGBox131" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -131.001, 49.9971, -71.4991 )
+snap = 0.0001
+width = 16.0
+height = 0.002
+depth = 4.0
+material = SubResource( 7 )
+
+[node name="CSGBox138" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -137.001, 49.9971, -87.4991 )
+snap = 0.0001
+width = 12.0
+height = 0.002
+depth = 12.0
+material = SubResource( 7 )
+
+[node name="CSGBox144" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -137.001, 49.9971, -77.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 8.0
+material = SubResource( 7 )
+
+[node name="CSGBox123" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -141.001, 49.9971, -53.4991 )
+snap = 0.0001
+width = 8.0
+height = 0.002
+depth = 4.0
+material = SubResource( 7 )
+
+[node name="CSGBox118" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -131.001, 57.9971, -51.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 16.0
+material = SubResource( 9 )
+
+[node name="CSGBox119" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -133.001, 53.9971, -73.4991 )
+snap = 0.0001
+width = 40.0
+height = 0.002
+depth = 20.0
+material = SubResource( 9 )
+
+[node name="CSGBox125" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -4.37114e-08, 0, 1, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1.91069e-15, -141.001, 55.9971, -53.4991 )
+snap = 0.0001
+width = 4.0
+height = 0.002
+depth = 4.0
+material = SubResource( 9 )
+
+[node name="CSGBox122" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, 2.96039e-07, 0, 1, 0, 2.96039e-07, 0, 1, -123, 56, -51.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox122"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox122/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox124" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -131, 54, -53.5 )
+width = 0.002
+height = 8.0
+depth = 16.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox124"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox124/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox127" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -133, 54, -49.5 )
+width = 0.002
+height = 8.0
+depth = 20.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox127"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox127/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox126" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -135, 52, -57.5 )
+width = 0.002
+height = 4.0
+depth = 16.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox126"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox126/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox132" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 1, 0, -2.90573e-07, 0, 1, 0, -2.90573e-07, 0, -1, -127, 52, -63.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox132"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox132/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox133" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 1, 0, -2.90573e-07, 0, 1, 0, -2.90573e-07, 0, -1, -123, 52, -63.5 )
+width = 0.002
+height = 4.0
+depth = 20.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox133"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox133/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox134" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.34284e-07, 0, -1, 0, 1, 0, -1, 0, 3.34284e-07, -129, 52, -73.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox134"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox134/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox141" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.34284e-07, 0, -1, 0, 1, 0, -1, 0, 3.34284e-07, -137, 52, -93.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox141"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox141/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox137" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.34284e-07, 0, -1, 0, 1, 0, -1, 0, 3.34284e-07, -141, 52, -81.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox137"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox137/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox142" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.34284e-07, 0, -1, 0, 1, 0, -1, 0, 3.34284e-07, -133, 52, -81.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox142"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox142/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox139" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, 3.77995e-07, 0, 1, 0, 3.77995e-07, 0, 1, -143, 52, -87.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox139"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox139/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox140" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, 3.77995e-07, 0, 1, 0, 3.77995e-07, 0, 1, -131, 52, -87.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox140"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox140/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox135" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -3.34284e-07, 0, -1, 0, 1, 0, -1, 0, 3.34284e-07, -133, 52, -69.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox135"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox135/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox136" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, 3.77995e-07, 0, 1, 0, 3.77995e-07, 0, 1, -139, 52, -75.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox136"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox136/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox143" type="CSGBox" parent="flur/wallz"]
+transform = Transform( -1, 0, 3.77995e-07, 0, 1, 0, 3.77995e-07, 0, 1, -135, 52, -77.5 )
+width = 0.002
+height = 4.0
+depth = 8.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox143"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox143/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="CSGBox129" type="CSGBox" parent="flur/wallz"]
+transform = Transform( 1, 0, -3.42727e-07, 0, 1, 0, -3.42727e-07, 0, -1, -143, 52, -53.5 )
+width = 0.002
+height = 4.0
+depth = 8.0
+material = SubResource( 10 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/wallz/CSGBox129"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/wallz/CSGBox129/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="Sprite3D" type="Sprite3D" parent="flur"]
+transform = Transform( 0.76, 0, 0, 0, 0.76, 0, 0, 0, 0.76, -137, 52, -91.5 )
+billboard = 2
+texture = ExtResource( 9 )
+hframes = 6
+frame = 5
+
+[node name="Area" type="Area" parent="flur/Sprite3D"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/Sprite3D/Area"]
+shape = SubResource( 12 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="flur/Sprite3D"]
+stream = ExtResource( 11 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="flur/Sprite3D"]
+stream = ExtResource( 12 )
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="flur/Sprite3D"]
+stream = ExtResource( 26 )
+volume_db = -20.0
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="flur/Sprite3D"]
+stream = ExtResource( 28 )
+volume_db = -15.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="flur/Sprite3D"]
+anims/ding = SubResource( 13 )
+anims/dong = SubResource( 14 )
+
+[node name="tlels" type="Sprite3D" parent="flur"]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -137, 51.749, -86.5 )
+visible = false
+billboard = 2
+texture = ExtResource( 14 )
+
+[node name="tlels4" type="Sprite3D" parent="flur"]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -137, 51.749, -86.5 )
+visible = false
+billboard = 2
+texture = ExtResource( 18 )
+
+[node name="tlels2" type="Sprite3D" parent="flur"]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -137, 51.749, -86.5 )
+visible = false
+billboard = 2
+texture = ExtResource( 13 )
+
+[node name="tlels3" type="Sprite3D" parent="flur"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -137, 51.749, -86.5 )
+visible = false
+billboard = 2
+texture = ExtResource( 17 )
+
+[node name="STOP" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 21 )
+volume_db = -15.0
+
+[node name="STOP2" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 19 )
+volume_db = -15.0
+
+[node name="STOP3" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 24 )
+volume_db = -15.0
+
+[node name="STOP4" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 23 )
+volume_db = -15.0
+
+[node name="STOP5" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 20 )
+volume_db = -15.0
+
+[node name="STOP6" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 22 )
+volume_db = -20.0
+
+[node name="R1" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 25 )
+volume_db = -5.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 30 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 29 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 32 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 31 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="flur"]
+stream = ExtResource( 33 )
+volume_db = -10.0
+
+[node name="ESCAPE" type="Area" parent="flur"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -125, 52, -71.5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/ESCAPE"]
+shape = SubResource( 15 )
+
+[node name="e7" type="Area" parent="flur"]
+transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, 1, 0, -1.31134e-07, -123, 55, -51.5 )
+script = ExtResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/e7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 16 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="flur/e7"]
+
+[node name="Panel" type="Panel" parent="flur/e7/CanvasLayer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="flur/e7/CanvasLayer"]
+anims/in = SubResource( 17 )
+anims/out = SubResource( 18 )
+
+[node name="Sprite3D" type="Sprite3D" parent="flur/e7"]
+transform = Transform( 0.78, 0, 0, 0, 0.78, 0, 0, 0, 1, 0, 1, -0.0100021 )
+texture = ExtResource( 6 )
+
+[node name="insod" type="Area" parent="flur"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -137, 52, -81.5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/insod"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+shape = SubResource( 19 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="flur"]
+anims/here = SubResource( 20 )
+anims/here2 = SubResource( 21 )
+
+[node name="dundun" type="Sprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 640, 360 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 27 )
+
+[connection signal="area_entered" from="flur/Sprite3D/Area" to="flur" method="_on_Area_area_entered"]
+[connection signal="body_entered" from="flur/ESCAPE" to="flur" method="_on_ESCAPE_body_entered"]
+[connection signal="area_entered" from="flur/e7" to="flur/e7" method="_on_t_area_entered"]
+[connection signal="animation_finished" from="flur/e7/CanvasLayer/AnimationPlayer" to="flur/e7" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="body_entered" from="flur/insod" to="flur" method="_on_insod_body_entered"]
+[connection signal="animation_finished" from="flur/AnimationPlayer" to="flur" method="_on_AnimationPlayer_animation_finished"]

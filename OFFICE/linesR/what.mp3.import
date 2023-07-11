@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/what.mp3-378acc528abfb5e8d7ecd32d4457b811.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/linesR/what.mp3"
+dest_files=[ "res://.import/what.mp3-378acc528abfb5e8d7ecd32d4457b811.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

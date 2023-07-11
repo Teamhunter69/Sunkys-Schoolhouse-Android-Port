@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Cartoon Falling Sound Effects.mp3-12e7275074af8a770a81ef30b21186a0.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/Cartoon Falling Sound Effects.mp3"
+dest_files=[ "res://.import/Cartoon Falling Sound Effects.mp3-12e7275074af8a770a81ef30b21186a0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

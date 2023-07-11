@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tlelsint.mp3-59db40709ab3c5368ceb13800552713b.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/tlelsint.mp3"
+dest_files=[ "res://.import/tlelsint.mp3-59db40709ab3c5368ceb13800552713b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

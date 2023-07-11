@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ringg.mp3-f517942db47a29098d6928c81a8b626a.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/sfx/ringg.mp3"
+dest_files=[ "res://.import/ringg.mp3-f517942db47a29098d6928c81a8b626a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

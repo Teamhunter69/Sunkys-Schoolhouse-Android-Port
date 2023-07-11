@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/RUNN_tlels.mp3-00a87c6e930550e85b8ae319097ac5cb.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/RUNN_tlels.mp3"
+dest_files=[ "res://.import/RUNN_tlels.mp3-00a87c6e930550e85b8ae319097ac5cb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

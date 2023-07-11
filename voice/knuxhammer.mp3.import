@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knuxhammer.mp3-e4b53e21a5e408637a8271f3d18b84e0.mp3str"
+
+[deps]
+
+source_file="res://voice/knuxhammer.mp3"
+dest_files=[ "res://.import/knuxhammer.mp3-e4b53e21a5e408637a8271f3d18b84e0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,745 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://NEXTTT/brick14.png" type="Texture" id=2]
+[ext_resource path="res://Levels/school/schoolyB.gd" type="Script" id=3]
+[ext_resource path="res://wall.gd" type="Script" id=4]
+[ext_resource path="res://NEXTTT/dor.png" type="Texture" id=5]
+[ext_resource path="res://door.png" type="Texture" id=6]
+[ext_resource path="res://Levels/school/t2.gd" type="Script" id=7]
+[ext_resource path="res://NEXTTT/floor8.png" type="Texture" id=8]
+[ext_resource path="res://NEXTTT/19721293-man-in-suit-holding-a-stop-sign-isolated-on-white-background.webp" type="Texture" id=9]
+[ext_resource path="res://NEXTTT/what.png" type="Texture" id=10]
+[ext_resource path="res://NEXTTT/brick15.png" type="Texture" id=11]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 100, 0.001, 100 )
+
+[sub_resource type="Animation" id=2]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -134, 55.5, -51.5 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=7]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 1, 0.25, 1 )
+uv1_offset = Vector3( 0, 0.5, 0 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 11 )
+uv1_scale = Vector3( 1, 0.25, 1 )
+uv1_offset = Vector3( 0, 0.5, 0 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 2, 2, 1 )
+
+[sub_resource type="Animation" id=11]
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="schooly" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96, 42, 2 )
+
+[node name="CollisionShape15" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 12, -30 )
+shape = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 8.0
+margin_top = 688.0
+margin_right = 168.0
+margin_bottom = 720.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+anims/in = SubResource( 2 )
+anims/out = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/start = SubResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1.3, 0, 1, 0, 1.31134e-07, -134, 55.5, -51.5 )
+
+[node name="Position3D" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -69, 44, -28 )
+
+[node name="flur" type="Spatial" parent="."]
+
+[node name="CSGBox117" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -139.001, 53.9971, -51.4991 )
+snap = 0.0001
+width = 50.0
+height = 0.002
+depth = 32.0
+material = SubResource( 5 )
+
+[node name="CSGBox118" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -123.001, 57.9971, -51.4991 )
+snap = 0.0001
+width = 40.0
+height = 0.002
+depth = 32.0
+material = SubResource( 6 )
+
+[node name="CSGBox157" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -143.001, 57.9971, -71.4991 )
+snap = 0.0001
+width = 21.0
+height = 0.002
+depth = 8.0
+material = SubResource( 6 )
+
+[node name="CSGBox120" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -145.001, 61.9971, -32.9991 )
+snap = 0.0001
+width = 3.0
+height = 0.002
+depth = 32.0
+material = SubResource( 6 )
+
+[node name="CSGBox121" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -145.001, 61.9971, -35.9991 )
+snap = 0.0001
+width = 3.0
+height = 0.002
+depth = 32.0
+material = SubResource( 6 )
+
+[node name="CSGBox119" type="CSGBox" parent="flur"]
+transform = Transform( -3.09086e-08, 0.707107, 0.707107, 3.09086e-08, 0.707107, -0.707107, -1, 0, -4.37114e-08, -141.001, 59.9971, -32.9991 )
+snap = 0.0001
+width = 3.0
+height = 0.002
+depth = 5.657
+material = SubResource( 6 )
+
+[node name="CSGBox122" type="CSGBox" parent="flur"]
+transform = Transform( -1, 0, 2.96039e-07, 0, 1, 0, 2.96039e-07, 0, 1, -123, 56, -51.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox122"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox122/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox123" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -125, 56, -49.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox123"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox123/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox124" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -125, 56, -53.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox124"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox124/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox131" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -147, 58, -31.5 )
+width = 0.002
+height = 8.0
+depth = 28.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox131"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox131/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox151" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83461e-07, 0, 1, 0, -3.83461e-07, 0, -1, -160.5, 58, -36.5 )
+width = 0.002
+height = 8.0
+depth = 10.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox151"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox151/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox152" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83461e-07, 0, 1, 0, -3.83461e-07, 0, -1, -157, 58, -39.5 )
+width = 0.002
+height = 8.0
+depth = 10.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox152"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox152/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox154" type="CSGBox" parent="flur"]
+transform = Transform( -4.27173e-07, 0, -1, 0, 1, 0, -1, 0, 4.27173e-07, -159, 58, -37.5 )
+width = 0.002
+height = 8.0
+depth = 10.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox154"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox154/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox150" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -145, 58, -34.5 )
+width = 0.002
+height = 8.0
+depth = 24.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox150"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox150/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox138" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -138.5, 56, -34.5 )
+width = 0.002
+height = 4.0
+depth = 13.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox138"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox138/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox140" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -141.5, 54, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox140"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox140/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox142" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -142, 54.5, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox142"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox142/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox143" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -142.5, 55, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox143"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox143/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox144" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -143, 55.5, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox144"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox144/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox145" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -143.5, 56, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox145"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox145/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox146" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -144, 56.5, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox146"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox146/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox147" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -144.5, 57, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox147"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox147/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox148" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -144.5, 57, -33 )
+width = 1.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox148"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox148/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox149" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -152.5, 57.5, -33 )
+width = 16.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox149"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox149/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox153" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -158.5, 57.5, -36 )
+width = 16.0
+height = 1.0
+depth = 3.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox153"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox153/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox141" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -143, 56, -72 )
+width = 0.002
+height = 4.0
+depth = 7.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox141"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox141/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox155" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -141, 56, -73.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox155"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox155/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox156" type="CSGBox" parent="flur"]
+transform = Transform( -4.27173e-07, 0, -1, 0, 1, 0, -1, 0, 4.27173e-07, -142, 56, -75.5 )
+width = 0.002
+height = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox156"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox156/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox139" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -137.5, 56, -68.5 )
+width = 0.002
+height = 4.0
+depth = 11.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox139"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox139/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox136" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, -137, 56, -71.5 )
+width = 0.002
+height = 4.0
+depth = 8.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox136"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox136/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox128" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -130, 56, -40.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox128"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox128/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox130" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -130, 56, -62.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox130"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox130/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox133" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -132, 56, -40.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox133"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox133/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox137" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -135, 56, -51.5 )
+width = 0.002
+height = 4.0
+depth = 4.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox137"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox137/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox135" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -132, 56, -62.5 )
+width = 0.002
+height = 4.0
+depth = 12.0
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox135"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox135/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox125" type="CSGBox" parent="flur"]
+transform = Transform( -0.707107, -6.18172e-08, 0.707107, -8.74228e-08, 1, 0, 0.707107, 6.18173e-08, 0.707107, -128.5, 56, -55 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox125"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox125/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox126" type="CSGBox" parent="flur"]
+transform = Transform( -0.707107, -6.18172e-08, 0.707107, -8.74228e-08, 1, 0, 0.707107, 6.18173e-08, 0.707107, -131.5, 56, -70 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox126"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox126/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox132" type="CSGBox" parent="flur"]
+transform = Transform( -0.707107, -6.18172e-08, 0.707107, -8.74228e-08, 1, 0, 0.707107, 6.18173e-08, 0.707107, -133.5, 56, -48 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox132"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox132/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox127" type="CSGBox" parent="flur"]
+transform = Transform( 0.707107, 6.18173e-08, 0.707106, -8.74228e-08, 1, 0, 0.707106, 6.18172e-08, -0.707107, -128.5, 56, -48 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox127"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox127/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox129" type="CSGBox" parent="flur"]
+transform = Transform( 0.707107, 6.18173e-08, 0.707106, -8.74228e-08, 1, 0, 0.707106, 6.18172e-08, -0.707107, -131.5, 56, -33 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox129"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox129/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox134" type="CSGBox" parent="flur"]
+transform = Transform( 0.707107, 6.18173e-08, 0.707106, -8.74228e-08, 1, 0, 0.707106, 6.18172e-08, -0.707107, -133.5, 56, -55 )
+width = 0.002
+height = 4.0
+depth = 4.245
+material = SubResource( 7 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox134"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox134/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox158" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -137, 54.5, -33 )
+width = 0.002
+height = 1.0
+depth = 3.0
+material = SubResource( 9 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox158"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox158/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CSGBox159" type="CSGBox" parent="flur"]
+transform = Transform( 1, 0, -3.83462e-07, 0, 1, 0, -3.83462e-07, 0, -1, -137, 54.5, -70 )
+width = 0.002
+height = 1.0
+depth = 3.0
+material = SubResource( 9 )
+script = ExtResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox159"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox159/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="e6b" type="Area" parent="."]
+transform = Transform( -2.18557e-07, 0, -1, 0, 1, 0, -1, 0, 2.18557e-07, -123.5, 55, -51.5 )
+script = ExtResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="e6b"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 10 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="e6b"]
+
+[node name="Panel" type="Panel" parent="e6b/CanvasLayer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="e6b/CanvasLayer"]
+anims/in = SubResource( 11 )
+anims/out = SubResource( 12 )
+
+[node name="Sprite3D" type="Sprite3D" parent="e6b"]
+transform = Transform( -0.78, 0, -8.74228e-08, 0, 0.78, 0, 6.81898e-08, 0, -1, -3.8147e-06, 1, -0.48999 )
+alpha_cut = 1
+texture = ExtResource( 6 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( -3.32207e-08, 0, 1, 0, 0.76, 0, -0.76, 0, -4.37114e-08, -134.99, 56, -51.5 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform( 0.2, 0, 1.06581e-14, 0, 0.2, 0, -1.77636e-15, 0, 1, -158.75, 60, -37.49 )
+texture = ExtResource( 9 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( 0.2, 0, 1.06581e-14, 0, 0.2, 0, -1.77636e-15, 0, 1, -141.99, 56, -75.49 )
+texture = ExtResource( 10 )
+
+[connection signal="area_entered" from="e6b" to="e6b" method="_on_t_area_entered"]
+[connection signal="animation_finished" from="e6b/CanvasLayer/AnimationPlayer" to="e6b" method="_on_AnimationPlayer_animation_finished"]

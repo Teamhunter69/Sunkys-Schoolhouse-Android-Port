@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knuxlose.mp3-940f37aff3486c1bb3a58d5cc1a5ff53.mp3str"
+
+[deps]
+
+source_file="res://voice/knuxlose.mp3"
+dest_files=[ "res://.import/knuxlose.mp3-940f37aff3486c1bb3a58d5cc1a5ff53.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

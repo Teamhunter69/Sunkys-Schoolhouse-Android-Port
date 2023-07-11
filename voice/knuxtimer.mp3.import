@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knuxtimer.mp3-363c046bc7969c965e5e422fd8dc84d9.mp3str"
+
+[deps]
+
+source_file="res://voice/knuxtimer.mp3"
+dest_files=[ "res://.import/knuxtimer.mp3-363c046bc7969c965e5e422fd8dc84d9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spopoooook.mp3-e5a3e49937039a8b46b0e646372631da.mp3str"
+
+[deps]
+
+source_file="res://OFFICE/CLASSES/crem/spopoooook.mp3"
+dest_files=[ "res://.import/spopoooook.mp3-e5a3e49937039a8b46b0e646372631da.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,360 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://wall.gd" type="Script" id=1]
+[ext_resource path="res://Levels/school/t2.gd" type="Script" id=2]
+[ext_resource path="res://NEXTTT/brick14.png" type="Texture" id=3]
+[ext_resource path="res://NEXTTT/floor8.png" type="Texture" id=4]
+[ext_resource path="res://door.png" type="Texture" id=5]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Levels/school/schoolyB.gd" type="Script" id=7]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 4 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 4 )
+uv1_scale = Vector3( 0.25, 1, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=15]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 3 )
+uv1_scale = Vector3( 1, 0.25, 1 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.1, 0.1, 0.1 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 2, 2, 1 )
+
+[sub_resource type="Animation" id=6]
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 154.5, 0.001, 96.5 )
+
+[sub_resource type="Animation" id=11]
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.3, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, -90, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "start2"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 10, 1.3, -2 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, -180, 0 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../CanvasLayer/Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="pei" type="Spatial"]
+script = ExtResource( 7 )
+
+[node name="flur" type="Spatial" parent="."]
+
+[node name="CSGBox117" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.999, -0.00289917, 0.000900269 )
+snap = 0.0001
+width = 50.0
+height = 0.002
+depth = 32.0
+material = SubResource( 1 )
+
+[node name="CSGBox118" type="CSGBox" parent="flur"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.999, 3.9971, 0.000900269 )
+snap = 0.0001
+width = 40.0
+height = 0.002
+depth = 41.0
+material = SubResource( 2 )
+
+[node name="CSGBox122" type="CSGBox" parent="flur"]
+transform = Transform( -1, 0, 2.96039e-07, 0, 1, 0, 2.96039e-07, 0, 1, -2, 2, 0 )
+width = 0.002
+height = 4.0
+depth = 6.0
+material = SubResource( 15 )
+script = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox122"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox122/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="CSGBox125" type="CSGBox" parent="flur"]
+transform = Transform( -1, 0, 2.96039e-07, 0, 1, 0, 2.96039e-07, 0, 1, 22, 2, 0 )
+width = 0.002
+height = 4.0
+depth = 6.0
+material = SubResource( 15 )
+script = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox125"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox125/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="CSGBox123" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, 10, 2, 3 )
+width = 0.002
+height = 4.0
+depth = 24.0
+material = SubResource( 15 )
+script = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox123"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox123/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="CSGBox124" type="CSGBox" parent="flur"]
+transform = Transform( 3.3975e-07, 0, 1, 0, 1, 0, 1, 0, -3.3975e-07, 10, 2, -3 )
+width = 0.002
+height = 4.0
+depth = 24.0
+material = SubResource( 15 )
+script = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="flur/CSGBox124"]
+
+[node name="CollisionShape" type="CollisionShape" parent="flur/CSGBox124/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+transform = Transform( 7.54979e-08, 0, -1, 0, 1.3, 0, 1, 0, 7.54979e-08, 0, 1.3, 0 )
+
+[node name="t7" type="Area" parent="."]
+transform = Transform( -2.18557e-07, 0, -1, 0, 1, 0, -1, 0, 2.18557e-07, 15.5, 1, -0.5 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="t7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50001, 1, -6.5 )
+shape = SubResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="t7"]
+
+[node name="Panel" type="Panel" parent="t7/CanvasLayer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="t7/CanvasLayer"]
+anims/in = SubResource( 6 )
+anims/out = SubResource( 7 )
+
+[node name="Sprite3D" type="Sprite3D" parent="t7"]
+transform = Transform( -0.78, 0, -8.74228e-08, 0, 0.78, 0, 6.81898e-08, 0, -1, -0.500004, 1, -6.49 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="t7"]
+transform = Transform( 0.78, 0, 0, 0, 0.78, 0, 0, 0, 1, -0.5, 1, 17.49 )
+texture = ExtResource( 5 )
+
+[node name="tA" type="Area" parent="."]
+transform = Transform( -1, 0, 2.62268e-07, 0, 1, 0, 2.62268e-07, 0, 1, 9.5, 1, 3.5 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="tA"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50001, 1, -6.5 )
+shape = SubResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="tA"]
+
+[node name="Panel" type="Panel" parent="tA/CanvasLayer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="tA/CanvasLayer"]
+anims/in = SubResource( 9 )
+anims/out = SubResource( 10 )
+
+[node name="Sprite3D" type="Sprite3D" parent="tA"]
+transform = Transform( -0.78, 0, -8.74228e-08, 0, 0.78, 0, 6.81898e-08, 0, -1, -0.500004, 1, -6.49 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape15" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 8 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/start = SubResource( 11 )
+anims/start2 = SubResource( 12 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 8.0
+margin_top = 688.0
+margin_right = 168.0
+margin_bottom = 720.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+anims/in = SubResource( 13 )
+anims/out = SubResource( 14 )
+
+[connection signal="area_entered" from="t7" to="t7" method="_on_t_area_entered"]
+[connection signal="animation_finished" from="t7/CanvasLayer/AnimationPlayer" to="t7" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="area_entered" from="tA" to="tA" method="_on_t_area_entered"]
+[connection signal="animation_finished" from="tA/CanvasLayer/AnimationPlayer" to="tA" method="_on_AnimationPlayer_animation_finished"]

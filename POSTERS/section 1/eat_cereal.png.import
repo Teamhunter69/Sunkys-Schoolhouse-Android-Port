@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/eat_cereal.png-b977c6c90a191a6b4e4329bf54c00a7b.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://POSTERS/section 1/eat_cereal.png"
+dest_files=[ "res://.import/eat_cereal.png-b977c6c90a191a6b4e4329bf54c00a7b.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

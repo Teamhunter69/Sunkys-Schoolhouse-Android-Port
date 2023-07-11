@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/makes_sense.mp3-a6c0f5a901a886d083d5af58e98bd779.mp3str"
+
+[deps]
+
+source_file="res://NEXTTT/linez/makes_sense.mp3"
+dest_files=[ "res://.import/makes_sense.mp3-a6c0f5a901a886d083d5af58e98bd779.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

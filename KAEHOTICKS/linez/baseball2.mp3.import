@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/baseball2.mp3-92cc85088f428c720cd2c81ca5b17bd3.mp3str"
+
+[deps]
+
+source_file="res://KAEHOTICKS/linez/baseball2.mp3"
+dest_files=[ "res://.import/baseball2.mp3-92cc85088f428c720cd2c81ca5b17bd3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

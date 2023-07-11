@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sulvar.mp3-9a383af42588d8d88b80f036195ad5c1.mp3str"
+
+[deps]
+
+source_file="res://GETOUTTATHERE/lines/sulvar.mp3"
+dest_files=[ "res://.import/sulvar.mp3-9a383af42588d8d88b80f036195ad5c1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
