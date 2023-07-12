@@ -8,6 +8,8 @@ func _ready() -> void:
 	$AudioStreamPlayer.play()
 
 func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("move_sprint"):
+		Global.to_floor1()
 	if Input.is_action_just_pressed("fullscreen"):
 		OS.window_fullscreen = !OS.window_fullscreen
 

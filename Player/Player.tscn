@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/robotnik2.png" type="Texture" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://contorl/5.png" type="Texture" id=25]
 [ext_resource path="res://contorl/8.png" type="Texture" id=26]
 [ext_resource path="res://contorl/4.png" type="Texture" id=27]
+[ext_resource path="res://contorl/itemswap.png" type="Texture" id=28]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.499231
@@ -474,9 +475,6 @@ custom_constants/line_separation = 0
 custom_constants/shadow_as_outline = 0
 custom_fonts/normal_font = SubResource( 15 )
 text = " DONUTS: 0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="SPEEDCOUNTER" type="RichTextLabel" parent="Control"]
 visible = false
@@ -552,13 +550,13 @@ normal = ExtResource( 11 )
 action = "move_right"
 
 [node name="riteclick" type="TouchScreenButton" parent="Control"]
-position = Vector2( 665, 618 )
+position = Vector2( 652, 509 )
 scale = Vector2( 0.904762, 0.814815 )
 normal = ExtResource( 16 )
 action = "click2"
 
 [node name="leftclick" type="TouchScreenButton" parent="Control"]
-position = Vector2( 533, 613 )
+position = Vector2( 509, 505 )
 scale = Vector2( 0.904762, 0.814815 )
 normal = ExtResource( 14 )
 action = "clin"
@@ -581,59 +579,75 @@ scale = Vector2( 0.904762, 0.814815 )
 normal = ExtResource( 19 )
 action = "debug"
 
-[node name="1" type="TouchScreenButton" parent="Control"]
-position = Vector2( 26, 184 )
+[node name="one" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 317, 682 )
 scale = Vector2( 0.371428, 0.333332 )
 normal = ExtResource( 18 )
 action = "1"
 
-[node name="2" type="TouchScreenButton" parent="Control"]
-position = Vector2( 80, 184 )
+[node name="two" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 380, 684 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 23 )
 action = "2"
 
-[node name="3" type="TouchScreenButton" parent="Control"]
-position = Vector2( 135, 183 )
+[node name="three" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 448, 683 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 22 )
 action = "3"
 
-[node name="4" type="TouchScreenButton" parent="Control"]
-position = Vector2( 193, 182 )
+[node name="four" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 524, 681 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 27 )
 action = "4"
 
-[node name="5" type="TouchScreenButton" parent="Control"]
-position = Vector2( 34, 241 )
+[node name="five" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 603, 680 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 25 )
 action = "5"
 
-[node name="6" type="TouchScreenButton" parent="Control"]
-position = Vector2( 88, 243 )
+[node name="six" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 694, 681 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 20 )
 action = "6"
 
-[node name="7" type="TouchScreenButton" parent="Control"]
-position = Vector2( 139, 241 )
+[node name="seven" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 766, 683 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 24 )
 action = "7"
 
-[node name="8" type="TouchScreenButton" parent="Control"]
-position = Vector2( 191, 236 )
-scale = Vector2( 0.361905, 0.333332 )
+[node name="eight" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 837, 680 )
+scale = Vector2( 0.342856, 0.333332 )
 normal = ExtResource( 26 )
 action = "8"
 
 [node name="SuperJump" type="TouchScreenButton" parent="Control"]
-position = Vector2( 34, 304 )
+visible = false
+position = Vector2( 1194, 489 )
 scale = Vector2( 0.361905, 0.333332 )
 normal = ExtResource( 21 )
 action = "R"
+
+[node name="itemswap" type="TouchScreenButton" parent="Control"]
+visible = false
+position = Vector2( 605, 411 )
+scale = Vector2( 0.66265, 0.766234 )
+normal = ExtResource( 28 )
+action = "select"
 
 [node name="Area" type="Area" parent="." groups=["hit"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.17994 )

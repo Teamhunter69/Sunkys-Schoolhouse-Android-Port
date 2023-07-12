@@ -13,9 +13,10 @@ var STOP = false
 func _process(_delta: float) -> void:
 	$Label2.text = String(hp)
 	
-	if Input.is_action_just_pressed("7"):
+	if Input.is_action_just_pressed("bosshurt"):
 		hp = 1
-	
+	if Input.is_action_just_pressed("vr_workaround"):
+		hp = hp - 1
 	if hp < 1:
 		if STOP == false:
 			$AnimationPlayer.play("WIN")

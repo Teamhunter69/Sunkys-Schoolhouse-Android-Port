@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/Sega.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://GETOUTTATHERE/BOOM.gd" type="Script" id=2]
+[ext_resource path="res://contorl/confirm.png" type="Texture" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -53,6 +54,8 @@ unless you're a chicken!!!
 That's right! i went there!"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 1130, 387 )
+normal = ExtResource( 3 )
+action = "ui_accept"

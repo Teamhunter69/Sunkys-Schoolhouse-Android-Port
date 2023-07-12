@@ -112,6 +112,16 @@ func _process(_delta: float) -> void:
 	
 	if Global.debug == true:
 		$Control/debug.visible = true
+		$Control/one.visible = true
+		$Control/two.visible = true
+		$Control/three.visible = true
+		$Control/four.visible = true
+		$Control/five.visible = true
+		$Control/six.visible = true
+		$Control/seven.visible = true
+		$Control/eight.visible = true
+		$Control/SuperJump.visible = true
+		$Control/itemswap.visible = true
 		if Input.is_action_just_pressed("R"):
 			$Control/AnimationPlayer.play("place")
 			punch = true

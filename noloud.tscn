@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://noloud.gd" type="Script" id=1]
 [ext_resource path="res://MUSIC/play.png" type="Texture" id=2]
 [ext_resource path="res://MUSIC/play2.png" type="Texture" id=3]
 [ext_resource path="res://MUSIC/hear them ring.mp3" type="AudioStream" id=4]
 [ext_resource path="res://sunkyteam.png" type="Texture" id=5]
+[ext_resource path="res://contorl/jump.png" type="Texture" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "play"
@@ -87,9 +88,9 @@ script = ExtResource( 1 )
 
 [node name="Panel" type="Panel" parent="."]
 modulate = Color( 0, 0, 0, 1 )
-margin_left = -8.0
+margin_left = 4.0
 margin_top = -8.0
-margin_right = 1288.0
+margin_right = 1300.0
 margin_bottom = 728.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -127,12 +128,10 @@ margin_top = 768.0
 margin_right = 352.0
 margin_bottom = 800.0
 rect_scale = Vector2( 4, 4 )
+hint_tooltip = "Control VOLUME!"
 min_value = -40.0
 max_value = 24.0
 value = -40.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="HSlider"]
 margin_left = -10.0
@@ -140,12 +139,9 @@ margin_top = -2.0
 margin_right = 430.0
 margin_bottom = 14.0
 rect_scale = Vector2( 0.7, 0.7 )
-text = "ADJUST THE SLIDER UNTIL THE SONG IS AT AN ACCEPTABLE VOLUME"
+text = "VOLUME CONTROL!"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
@@ -169,6 +165,11 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 640, 360 )
 scale = Vector2( 0.45, 0.45 )
 texture = ExtResource( 5 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 30, 161 )
+normal = ExtResource( 6 )
+action = "move_sprint"
 
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
