@@ -3852,7 +3852,7 @@ script = ExtResource( 51 )
 anims/dans = SubResource( 49 )
 
 [node name="dancer35" type="Sprite3D" parent="floor2/dancers/3f"]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 1, 10, 10.135, 0.01 )
+transform = Transform( 1.70646, 0, 0, 0, 1.50359, 0, 0, 0, 1, 10, 8.55367, 0.01 )
 texture = ExtResource( 111 )
 hframes = 3
 script = ExtResource( 51 )
@@ -4053,7 +4053,7 @@ script = ExtResource( 51 )
 anims/dans = SubResource( 69 )
 
 [node name="dancer34" type="Sprite3D" parent="floor2/dancers/3f"]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 1, 19.8657, 8.35905, 20 )
+transform = Transform( 1.4773, 0, 0, 0, 1.42865, 0, 0, 0, 12.0903, 19.8657, 8.35905, 20 )
 billboard = 2
 texture = ExtResource( 130 )
 hframes = 3

@@ -14,10 +14,12 @@ func _physics_process(_delta: float) -> void:
 		$CAM/AnimationPlayer.play("cam")
 		Global.hud = false
 		$Control.visible = true
+		Global.boo = true
 	else:
 		Global.hud = true
 		$Control.visible = false
 		self.visible = false
+		Global.boo = false
 	#if Input.is_action_just_pressed("E"):
 	#	if ding == false:
 	#		Global.boogie = true

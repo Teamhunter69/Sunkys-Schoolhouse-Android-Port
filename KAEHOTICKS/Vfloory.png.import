@@ -2,38 +2,34 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.s3tc.stex"
-path.etc2="res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.etc2.stex"
-path.etc="res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.etc.stex"
-path.pvrtc="res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.pvrtc.stex"
+path="res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.stex"
 metadata={
-"imported_formats": [ "bptc", "s3tc", "etc2", "etc", "pvrtc" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://KAEHOTICKS/Vfloory.png"
-dest_files=[ "res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.s3tc.stex", "res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.etc2.stex", "res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.etc.stex", "res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.pvrtc.stex" ]
+dest_files=[ "res://.import/Vfloory.png-4e96d18b4f0168ed61d3ce9ae7b628bd.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.7
+compress/mode=1
+compress/lossy_quality=0.25
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
+flags/filter=false
+flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
-size_limit=0
+size_limit=1024
 detect_3d=false
 svg/scale=1.0

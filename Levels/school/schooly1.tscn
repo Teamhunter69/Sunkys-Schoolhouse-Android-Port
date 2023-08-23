@@ -1253,7 +1253,7 @@ anims/open = SubResource( 10 )
 anims/win = SubResource( 11 )
 
 [node name="Sprite3D" type="Sprite3D" parent="floor1/doors/doorm1"]
-transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 0, 0 )
+transform = Transform( 4.60118, 0, 2.01552e-07, 0, 4.40819, 0, 1.22939e-07, 0, 1, 0, 0, 0 )
 texture = ExtResource( 22 )
 hframes = 9
 
@@ -1268,7 +1268,7 @@ shape = SubResource( 12 )
 shape = SubResource( 13 )
 
 [node name="Sprite3D2" type="Sprite3D" parent="floor1/doors/doorm1"]
-transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, -3.55271e-15, 0, 1, 40.9731, 0, -3.8147e-06 )
+transform = Transform( 4.52251, 0, 1.9715e-07, 0, 4.39708, 0, 1.20254e-07, 0, 1, 40.9731, 0, -1.90735e-05 )
 texture = ExtResource( 22 )
 hframes = 9
 frame = 8

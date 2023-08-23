@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://noloud.gd" type="Script" id=1]
 [ext_resource path="res://MUSIC/play.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://MUSIC/hear them ring.mp3" type="AudioStream" id=4]
 [ext_resource path="res://sunkyteam.png" type="Texture" id=5]
 [ext_resource path="res://contorl/jump.png" type="Texture" id=6]
+[ext_resource path="res://contorl/nophone.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "play"
@@ -170,6 +171,12 @@ texture = ExtResource( 5 )
 position = Vector2( 30, 161 )
 normal = ExtResource( 6 )
 action = "move_sprint"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2( 34, 300 )
+scale = Vector2( 1.20482, 1.16883 )
+normal = ExtResource( 7 )
+action = "touchoff"
 
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

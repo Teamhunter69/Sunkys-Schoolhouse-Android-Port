@@ -1042,9 +1042,7 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="floor2/boogie/Control/line1"]
 anims/blip = SubResource( 5 )
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/line1" groups=[
-"boogieget",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/line1" groups=["boogieget"]]
 position = Vector2( 64, 72 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/line1/Area2D"]
@@ -1082,9 +1080,7 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="floor2/boogie/Control/line2"]
 anims/blip = SubResource( 8 )
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/line2" groups=[
-"boogieget",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/line2" groups=["boogieget"]]
 position = Vector2( 64, 72 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/line2/Area2D"]
@@ -1107,9 +1103,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="thing" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = 1280.0
 margin_top = 80.0
@@ -1121,17 +1115,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing2" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing2" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = 606.182
 margin_top = 144.0
@@ -1143,17 +1133,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing2" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing2" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing2/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing3" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing3" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = 48.0
 margin_top = 80.0
@@ -1165,17 +1151,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing3" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing3" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing3/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing4" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing4" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = 1280.0
 margin_top = 144.0
@@ -1187,17 +1169,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing4" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing4" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing4/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing5" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing5" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = -32.0
 margin_top = 80.0
@@ -1208,17 +1186,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing5" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing5" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing5/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing6" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing6" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = -32.0
 margin_top = 144.0
@@ -1229,17 +1203,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing6" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing6" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing6/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing7" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing7" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = -32.0
 margin_top = 80.0
@@ -1251,17 +1221,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing7" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing7" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing7/Area2D"]
 shape = SubResource( 12 )
 
-[node name="thing8" type="Panel" parent="floor2/boogie/Control/thingz" groups=[
-"boogiething",
-]]
+[node name="thing8" type="Panel" parent="floor2/boogie/Control/thingz" groups=["boogiething"]]
 visible = false
 margin_left = 853.333
 margin_top = 144.0
@@ -1273,9 +1239,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing8" groups=[
-"boogienote",
-]]
+[node name="Area2D" type="Area2D" parent="floor2/boogie/Control/thingz/thing8" groups=["boogienote"]]
 position = Vector2( 16, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/boogie/Control/thingz/thing8/Area2D"]
@@ -1291,10 +1255,10 @@ margin_top = 40.0
 margin_right = 680.0
 margin_bottom = 60.0
 rect_scale = Vector2( 2, 2 )
-custom_fonts/normal_font = SubResource( 13 )
 custom_colors/default_color = Color( 1, 0, 1, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 13 )
 text = "0"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1321,10 +1285,10 @@ margin_top = 208.0
 margin_right = 668.0
 margin_bottom = 228.0
 rect_scale = Vector2( 2, 2 )
-custom_fonts/normal_font = SubResource( 13 )
 custom_colors/default_color = Color( 1, 0, 1, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 13 )
 text = "use the mouse buttons to hit the dang notes!!!!!!!!!!!!!!!!!!!!!!!!"
 __meta__ = {
 "_edit_use_anchors_": false

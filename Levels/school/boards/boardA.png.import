@@ -2,30 +2,26 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.s3tc.stex"
-path.etc2="res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.etc2.stex"
-path.etc="res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.etc.stex"
-path.pvrtc="res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.pvrtc.stex"
+path="res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.stex"
 metadata={
-"imported_formats": [ "bptc", "s3tc", "etc2", "etc", "pvrtc" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Levels/school/boards/boardA.png"
-dest_files=[ "res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.s3tc.stex", "res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.etc2.stex", "res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.etc.stex", "res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.pvrtc.stex" ]
+dest_files=[ "res://.import/boardA.png-c3307adaed93e83cb290a7b8cf3d5287.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.7
+compress/mode=1
+compress/lossy_quality=0.25
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=false
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=false
@@ -34,6 +30,6 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
-size_limit=0
+size_limit=1024
 detect_3d=false
 svg/scale=1.0

@@ -17,7 +17,6 @@ var move_axis := Vector2()
 var snap := Vector3()
 var sprint_enabled := true
 var sprinting := false
-
 var stamina = INF
 var maxstamina = INF
 var staminabonus = 10
@@ -109,9 +108,44 @@ func _process(_delta: float) -> void:
 	
 	if Input.is_action_just_pressed("click2"):
 		$Area2/AnimationPlayer.play("click")
-	
-	if Global.debug == true:
-		$Control/debug.visible = true
+		if Global.boo == true:
+			$Control/up.visible = false
+			$Control/down.visible = false
+			$Control/left.visible = false
+			$Control/right.visible = false
+			$Control/camup.visible = false
+			$Control/camdown.visible = false
+			$Control/camleft.visible = false
+			$Control/camright.visible = false
+			$Control/jump.visible = false
+			$Control/Sprint.visible = false
+		if Global.boo == false:
+			$Control/up.visible = true
+			$Control/down.visible = true
+			$Control/left.visible = true
+			$Control/right.visible = true
+			$Control/camup.visible = true
+			$Control/camdown.visible = true
+			$Control/camleft.visible = true
+			$Control/camright.visible = true
+			$Control/jump.visible = true
+			$Control/Sprint.visible = true
+	if Global.touchscreen == false:
+		$Control/up.visible = false
+		$Control/down.visible = false
+		$Control/left.visible = false
+		$Control/right.visible = false
+		$Control/camup.visible = false
+		$Control/camdown.visible = false
+		$Control/camleft.visible = false
+		$Control/camright.visible = false
+		$Control/riteclick.visible = false
+		$Control/leftclick.visible = false
+		$Control/jump.visible = false
+		$Control/Sprint.visible = false
+		$Control/Debug.visible = false
+	if Global.debug == true and Global.touchscreen == true:
+		$Control/Debug.visible = false
 		$Control/one.visible = true
 		$Control/two.visible = true
 		$Control/three.visible = true
@@ -128,7 +162,6 @@ func _process(_delta: float) -> void:
 			self.translation.y = self.translation.y + 10
 	else:
 		$Control/debug.visible = false
-	
 	#if Input.is_action_just_pressed("E"):
 	#	Global.to_school()
 	

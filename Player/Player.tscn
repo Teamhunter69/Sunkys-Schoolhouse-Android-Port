@@ -399,8 +399,8 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="robotnik2" type="Sprite" parent="Control"]
-position = Vector2( 640, 360 )
-scale = Vector2( 2, 2 )
+position = Vector2( 640.5, 360 )
+scale = Vector2( 22.8036, 22.3125 )
 texture = ExtResource( 2 )
 hframes = 18
 vframes = 2

@@ -1199,9 +1199,9 @@ margin_top = 72.0
 margin_right = 680.0
 margin_bottom = 90.0
 rect_scale = Vector2( 2, 2 )
-custom_fonts/normal_font = SubResource( 14 )
 custom_colors/default_color = Color( 1, 1, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 14 )
 text = "0"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2616,9 +2616,9 @@ margin_top = 40.0
 margin_right = 680.0
 margin_bottom = 60.0
 rect_scale = Vector2( 2, 2 )
-custom_fonts/normal_font = SubResource( 50 )
 custom_colors/default_color = Color( 0, 1, 1, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 50 )
 text = "0/327"
 __meta__ = {
 "_edit_use_anchors_": false

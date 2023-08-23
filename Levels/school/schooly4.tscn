@@ -4162,49 +4162,49 @@ texture = ExtResource( 233 )
 [node name="doorz" type="Spatial" parent="floor4/classes"]
 
 [node name="door" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48, 2, -20 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1.50692, 0, -1.54131, 0, -6.73726e-08, 48, 2, -20 )
 
 [node name="door15" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -2.23517e-08, 0, -1, 0, 1, 0, 1, 0, -2.23517e-08, 52, 2, -8.99999 )
+transform = Transform( -2.23517e-08, 0, -1, 0, 1.51379, 0, 1.509, 0, -3.37287e-08, 52, 2, -8.99999 )
 
 [node name="door6" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48, 2, -29 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1.49523, 0, -1.51659, 0, -6.62925e-08, 48, 2, -29 )
 
 [node name="door10" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31, 2, -12 )
+transform = Transform( -1.51632, 0, -1.32561e-07, 0, 1.50533, 0, 8.74228e-08, 0, -1, 31, 2, -12 )
 
 [node name="door11" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 31, 2, 12 )
+transform = Transform( 1.52364, 0, 2.66402e-07, 0, 1.48922, 0, -1.74846e-07, 0, 1, 31, 2, 12 )
 
 [node name="door13" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 42, 2, 10 )
+transform = Transform( 1.52154, 0, 2.66035e-07, 0, 1.48453, 0, -1.74846e-07, 0, 1, 42, 2, 10 )
 
 [node name="door14" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40, 2, 14 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1.48488, 0, 1.52929, 0, 2.00541e-07, 40, 2, 14 )
 
 [node name="door7" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 41, 2, -14 )
+transform = Transform( -1.53808, 0, -1.34463e-07, 0, 1.48954, 0, 8.74228e-08, 0, -1, 41, 2, -14 )
 
 [node name="door8" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 41, 2, -8 )
+transform = Transform( -1.62643, 0, -1.42187e-07, 0, 1.50989, 0, 8.74228e-08, 0, -1, 41, 2, -8 )
 
 [node name="door9" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 42, 2, -3 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1.50441, 0, 1.53023, 0, 2.00666e-07, 42, 2, -3 )
 
 [node name="door2" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40, 2, -39 )
+transform = Transform( 1.31134e-07, 0, -1, 0, 1.49866, 0, 1.52747, 0, 2.00303e-07, 40, 2, -39 )
 
 [node name="door12" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 41, 2, -32 )
+transform = Transform( -1.53078, 0, -1.33825e-07, 0, 1.51033, 0, 8.74228e-08, 0, -1, 41, 2, -32 )
 
 [node name="door3" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( -2.01166e-07, 0, 1, 0, 1, 0, -1, 0, -2.01166e-07, 36, 2, -33 )
+transform = Transform( -2.01166e-07, 0, 1, 0, 1.4955, 0, -1.55459, 0, -3.1273e-07, 36, 2, -33 )
 
 [node name="door4" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1, 0, 1.57454e-07, 0, 1, 0, -1.57454e-07, 0, 1, 38, 2, -46 )
+transform = Transform( 1.53446, 0, 2.41606e-07, 0, 1.50129, 0, -1.57454e-07, 0, 1, 38, 2, -46 )
 
 [node name="door5" parent="floor4/classes/doorz" instance=ExtResource( 235 )]
-transform = Transform( 1, 0, 1.57454e-07, 0, 1, 0, -1.57454e-07, 0, 1, 50, 2, -46 )
+transform = Transform( 1.5153, 0, 2.38589e-07, 0, 1.51926, 0, -1.57454e-07, 0, 1, 50, 2, -46 )
 
 [node name="donutz" type="Spatial" parent="floor4/classes"]
 
@@ -4353,7 +4353,7 @@ volume_db = -80.0
 autoplay = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="floor4/classes/mummy rap/MUMMYRAP"]
-transform = Transform( -1, 4.94681e-15, -8.74228e-08, -9.09715e-15, -1, 4.74743e-08, -8.74228e-08, 4.74743e-08, 1, 0, -0.5, 6.5 )
+transform = Transform( -1, 1.13605e-15, -2.0077e-08, -2.08919e-15, -1, 4.74743e-08, -2.0077e-08, 4.74743e-08, 1, 0, -0.5, 6.5 )
 stream = ExtResource( 243 )
 unit_db = 5.0
 autoplay = true

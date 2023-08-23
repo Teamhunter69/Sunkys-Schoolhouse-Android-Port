@@ -2,38 +2,34 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.s3tc.stex"
-path.etc2="res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.etc2.stex"
-path.etc="res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.etc.stex"
-path.pvrtc="res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.pvrtc.stex"
+path="res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.stex"
 metadata={
-"imported_formats": [ "bptc", "s3tc", "etc2", "etc", "pvrtc" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Texture/floor2.png"
-dest_files=[ "res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.s3tc.stex", "res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.etc2.stex", "res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.etc.stex", "res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.pvrtc.stex" ]
+dest_files=[ "res://.import/floor2.png-9901d2de18ade42f1c51b7dc8630ba3f.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.7
+compress/mode=1
+compress/lossy_quality=0.25
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=false
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
-size_limit=0
+size_limit=1024
 detect_3d=false
 svg/scale=1.0

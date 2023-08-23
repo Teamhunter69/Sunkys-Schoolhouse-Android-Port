@@ -80,11 +80,10 @@ var upgrade1 = 0
 var number = -1
 
 var cam = true
-
+var touchscreen = true
 
 var mouse = false
-
-
+var boo = false
 var debug = false
 
 
